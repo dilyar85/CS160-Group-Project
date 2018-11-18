@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E2A48421A1FF1600EBF88F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A48321A1FF1600EBF88F /* AppDelegate.swift */; };
+		00E2A48621A1FF1600EBF88F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A48521A1FF1600EBF88F /* ViewController.swift */; };
+		00E2A48921A1FF1600EBF88F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E2A48721A1FF1600EBF88F /* Main.storyboard */; };
+		00E2A48C21A1FF1600EBF88F /* Petgram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A48A21A1FF1600EBF88F /* Petgram.xcdatamodeld */; };
+		00E2A48E21A1FF1800EBF88F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E2A48D21A1FF1800EBF88F /* Assets.xcassets */; };
+		00E2A49121A1FF1800EBF88F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E2A48F21A1FF1800EBF88F /* LaunchScreen.storyboard */; };
+		00E2A49C21A1FF1800EBF88F /* PetgramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A49B21A1FF1800EBF88F /* PetgramTests.swift */; };
+		00E2A4A721A1FF1800EBF88F /* PetgramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A4A621A1FF1800EBF88F /* PetgramUITests.swift */; };
+		D421A5B2AEA4A286FB392270 /* Pods_Petgram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23681414BDB5449BF91E70EE /* Pods_Petgram.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E2A49821A1FF1800EBF88F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00E2A47821A1FF1600EBF88F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00E2A47F21A1FF1600EBF88F;
+			remoteInfo = Petgram;
+		};
+		00E2A4A321A1FF1800EBF88F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00E2A47821A1FF1600EBF88F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00E2A47F21A1FF1600EBF88F;
+			remoteInfo = Petgram;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E2A48021A1FF1600EBF88F /* Petgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Petgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E2A48321A1FF1600EBF88F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00E2A48521A1FF1600EBF88F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		00E2A48821A1FF1600EBF88F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00E2A48B21A1FF1600EBF88F /* Petgram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Petgram.xcdatamodel; sourceTree = "<group>"; };
+		00E2A48D21A1FF1800EBF88F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00E2A49021A1FF1800EBF88F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00E2A49221A1FF1800EBF88F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E2A49721A1FF1800EBF88F /* PetgramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetgramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E2A49B21A1FF1800EBF88F /* PetgramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetgramTests.swift; sourceTree = "<group>"; };
+		00E2A49D21A1FF1800EBF88F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E2A4A221A1FF1800EBF88F /* PetgramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetgramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E2A4A621A1FF1800EBF88F /* PetgramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetgramUITests.swift; sourceTree = "<group>"; };
+		00E2A4A821A1FF1800EBF88F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FFDED0DA13E74099994D003 /* Pods-Petgram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Petgram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Petgram/Pods-Petgram.debug.xcconfig"; sourceTree = "<group>"; };
+		23681414BDB5449BF91E70EE /* Pods_Petgram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Petgram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9F304FE60451571418B6E5E /* Pods-Petgram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Petgram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Petgram/Pods-Petgram.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E2A47D21A1FF1600EBF88F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D421A5B2AEA4A286FB392270 /* Pods_Petgram.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E2A49421A1FF1800EBF88F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E2A49F21A1FF1800EBF88F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E2A47721A1FF1600EBF88F = {
+			isa = PBXGroup;
+			children = (
+				00E2A48221A1FF1600EBF88F /* Petgram */,
+				00E2A49A21A1FF1800EBF88F /* PetgramTests */,
+				00E2A4A521A1FF1800EBF88F /* PetgramUITests */,
+				00E2A48121A1FF1600EBF88F /* Products */,
+				C3022EEBDF9E2087EAE246FF /* Pods */,
+				9B95EDC29D388B445F7897FB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		00E2A48121A1FF1600EBF88F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00E2A48021A1FF1600EBF88F /* Petgram.app */,
+				00E2A49721A1FF1800EBF88F /* PetgramTests.xctest */,
+				00E2A4A221A1FF1800EBF88F /* PetgramUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00E2A48221A1FF1600EBF88F /* Petgram */ = {
+			isa = PBXGroup;
+			children = (
+				00E2A48321A1FF1600EBF88F /* AppDelegate.swift */,
+				00E2A48521A1FF1600EBF88F /* ViewController.swift */,
+				00E2A48721A1FF1600EBF88F /* Main.storyboard */,
+				00E2A48D21A1FF1800EBF88F /* Assets.xcassets */,
+				00E2A48F21A1FF1800EBF88F /* LaunchScreen.storyboard */,
+				00E2A49221A1FF1800EBF88F /* Info.plist */,
+				00E2A48A21A1FF1600EBF88F /* Petgram.xcdatamodeld */,
+			);
+			path = Petgram;
+			sourceTree = "<group>";
+		};
+		00E2A49A21A1FF1800EBF88F /* PetgramTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E2A49B21A1FF1800EBF88F /* PetgramTests.swift */,
+				00E2A49D21A1FF1800EBF88F /* Info.plist */,
+			);
+			path = PetgramTests;
+			sourceTree = "<group>";
+		};
+		00E2A4A521A1FF1800EBF88F /* PetgramUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00E2A4A621A1FF1800EBF88F /* PetgramUITests.swift */,
+				00E2A4A821A1FF1800EBF88F /* Info.plist */,
+			);
+			path = PetgramUITests;
+			sourceTree = "<group>";
+		};
+		9B95EDC29D388B445F7897FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23681414BDB5449BF91E70EE /* Pods_Petgram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3022EEBDF9E2087EAE246FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FFDED0DA13E74099994D003 /* Pods-Petgram.debug.xcconfig */,
+				B9F304FE60451571418B6E5E /* Pods-Petgram.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E2A47F21A1FF1600EBF88F /* Petgram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E2A4AB21A1FF1800EBF88F /* Build configuration list for PBXNativeTarget "Petgram" */;
+			buildPhases = (
+				A41736F2B6913C627FA94A75 /* [CP] Check Pods Manifest.lock */,
+				00E2A47C21A1FF1600EBF88F /* Sources */,
+				00E2A47D21A1FF1600EBF88F /* Frameworks */,
+				00E2A47E21A1FF1600EBF88F /* Resources */,
+				7027B3616C97F8D09CC52E30 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Petgram;
+			productName = Petgram;
+			productReference = 00E2A48021A1FF1600EBF88F /* Petgram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00E2A49621A1FF1800EBF88F /* PetgramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E2A4AE21A1FF1800EBF88F /* Build configuration list for PBXNativeTarget "PetgramTests" */;
+			buildPhases = (
+				00E2A49321A1FF1800EBF88F /* Sources */,
+				00E2A49421A1FF1800EBF88F /* Frameworks */,
+				00E2A49521A1FF1800EBF88F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E2A49921A1FF1800EBF88F /* PBXTargetDependency */,
+			);
+			name = PetgramTests;
+			productName = PetgramTests;
+			productReference = 00E2A49721A1FF1800EBF88F /* PetgramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00E2A4A121A1FF1800EBF88F /* PetgramUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E2A4B121A1FF1800EBF88F /* Build configuration list for PBXNativeTarget "PetgramUITests" */;
+			buildPhases = (
+				00E2A49E21A1FF1800EBF88F /* Sources */,
+				00E2A49F21A1FF1800EBF88F /* Frameworks */,
+				00E2A4A021A1FF1800EBF88F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E2A4A421A1FF1800EBF88F /* PBXTargetDependency */,
+			);
+			name = PetgramUITests;
+			productName = PetgramUITests;
+			productReference = 00E2A4A221A1FF1800EBF88F /* PetgramUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00E2A47821A1FF1600EBF88F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = CS160;
+				TargetAttributes = {
+					00E2A47F21A1FF1600EBF88F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					00E2A49621A1FF1800EBF88F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 00E2A47F21A1FF1600EBF88F;
+					};
+					00E2A4A121A1FF1800EBF88F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 00E2A47F21A1FF1600EBF88F;
+					};
+				};
+			};
+			buildConfigurationList = 00E2A47B21A1FF1600EBF88F /* Build configuration list for PBXProject "Petgram" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00E2A47721A1FF1600EBF88F;
+			productRefGroup = 00E2A48121A1FF1600EBF88F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00E2A47F21A1FF1600EBF88F /* Petgram */,
+				00E2A49621A1FF1800EBF88F /* PetgramTests */,
+				00E2A4A121A1FF1800EBF88F /* PetgramUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E2A47E21A1FF1600EBF88F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E2A49121A1FF1800EBF88F /* LaunchScreen.storyboard in Resources */,
+				00E2A48E21A1FF1800EBF88F /* Assets.xcassets in Resources */,
+				00E2A48921A1FF1600EBF88F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E2A49521A1FF1800EBF88F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E2A4A021A1FF1800EBF88F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7027B3616C97F8D09CC52E30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Petgram/Pods-Petgram-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/LeanCloud/LeanCloud.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LeanCloud.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Petgram/Pods-Petgram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A41736F2B6913C627FA94A75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Petgram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E2A47C21A1FF1600EBF88F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E2A48621A1FF1600EBF88F /* ViewController.swift in Sources */,
+				00E2A48C21A1FF1600EBF88F /* Petgram.xcdatamodeld in Sources */,
+				00E2A48421A1FF1600EBF88F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E2A49321A1FF1800EBF88F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E2A49C21A1FF1800EBF88F /* PetgramTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00E2A49E21A1FF1800EBF88F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E2A4A721A1FF1800EBF88F /* PetgramUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E2A49921A1FF1800EBF88F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00E2A47F21A1FF1600EBF88F /* Petgram */;
+			targetProxy = 00E2A49821A1FF1800EBF88F /* PBXContainerItemProxy */;
+		};
+		00E2A4A421A1FF1800EBF88F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00E2A47F21A1FF1600EBF88F /* Petgram */;
+			targetProxy = 00E2A4A321A1FF1800EBF88F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00E2A48721A1FF1600EBF88F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00E2A48821A1FF1600EBF88F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00E2A48F21A1FF1800EBF88F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00E2A49021A1FF1800EBF88F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00E2A4A921A1FF1800EBF88F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00E2A4AA21A1FF1800EBF88F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00E2A4AC21A1FF1800EBF88F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FFDED0DA13E74099994D003 /* Pods-Petgram.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q55PZWZ8FY;
+				INFOPLIST_FILE = Petgram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dilyar85-com.github.Petgram";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00E2A4AD21A1FF1800EBF88F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9F304FE60451571418B6E5E /* Pods-Petgram.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q55PZWZ8FY;
+				INFOPLIST_FILE = Petgram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dilyar85-com.github.Petgram";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		00E2A4AF21A1FF1800EBF88F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q55PZWZ8FY;
+				INFOPLIST_FILE = PetgramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dilyar85-com.github.PetgramTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Petgram.app/Petgram";
+			};
+			name = Debug;
+		};
+		00E2A4B021A1FF1800EBF88F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q55PZWZ8FY;
+				INFOPLIST_FILE = PetgramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dilyar85-com.github.PetgramTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Petgram.app/Petgram";
+			};
+			name = Release;
+		};
+		00E2A4B221A1FF1800EBF88F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q55PZWZ8FY;
+				INFOPLIST_FILE = PetgramUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dilyar85-com.github.PetgramUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Petgram;
+			};
+			name = Debug;
+		};
+		00E2A4B321A1FF1800EBF88F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q55PZWZ8FY;
+				INFOPLIST_FILE = PetgramUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dilyar85-com.github.PetgramUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Petgram;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E2A47B21A1FF1600EBF88F /* Build configuration list for PBXProject "Petgram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E2A4A921A1FF1800EBF88F /* Debug */,
+				00E2A4AA21A1FF1800EBF88F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00E2A4AB21A1FF1800EBF88F /* Build configuration list for PBXNativeTarget "Petgram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E2A4AC21A1FF1800EBF88F /* Debug */,
+				00E2A4AD21A1FF1800EBF88F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00E2A4AE21A1FF1800EBF88F /* Build configuration list for PBXNativeTarget "PetgramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E2A4AF21A1FF1800EBF88F /* Debug */,
+				00E2A4B021A1FF1800EBF88F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00E2A4B121A1FF1800EBF88F /* Build configuration list for PBXNativeTarget "PetgramUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E2A4B221A1FF1800EBF88F /* Debug */,
+				00E2A4B321A1FF1800EBF88F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		00E2A48A21A1FF1600EBF88F /* Petgram.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				00E2A48B21A1FF1600EBF88F /* Petgram.xcdatamodel */,
+			);
+			currentVersion = 00E2A48B21A1FF1600EBF88F /* Petgram.xcdatamodel */;
+			path = Petgram.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 00E2A47821A1FF1600EBF88F /* Project object */;
+}
