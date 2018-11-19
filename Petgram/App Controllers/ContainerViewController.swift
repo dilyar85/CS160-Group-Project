@@ -161,7 +161,7 @@ class ContainerViewController: UIViewController {
     }
     
     var currentVC: UIViewController? {
-        return self.childViewControllers.last
+        return self.children.last
     }
     
     var currentRootVCNonNav: UIViewController? {
@@ -185,8 +185,8 @@ class ContainerViewController: UIViewController {
         if let oldVC = self.currentVC {
             self.swap(from: oldVC, to: newVC)
         } else {
-            self.addChildViewController(newVC)
-            newVC.didMove(toParentViewController: self)
+            self.addChild(newVC)
+            newVC.didMove(toParent: self)
             
             self.view.addSubview(newVC.view)
             newVC.view.translatesAutoresizingMaskIntoConstraints = false
@@ -323,11 +323,11 @@ class ContainerViewController: UIViewController {
         self.swapping = true
         
         // do before animation starts, so state is set before new one loads
-        fromVC.willMove(toParentViewController: nil)
+        fromVC.willMove(toParent: nil)
         
         if toVC.parent !== self {
-            self.addChildViewController(toVC)
-            toVC.didMove(toParentViewController: self)
+            self.addChild(toVC)
+            toVC.didMove(toParent: self)
         }
         
         if toVC.view.superview !== self.view {
@@ -358,7 +358,7 @@ class ContainerViewController: UIViewController {
             fromVC.view.alpha = 0.0
         }, completion: { _ in
             fromVC.view.removeFromSuperview()
-            fromVC.removeFromParentViewController()
+            fromVC.removeFromParent()
             self.swapping = false
         })
         

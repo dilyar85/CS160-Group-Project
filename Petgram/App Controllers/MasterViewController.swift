@@ -31,23 +31,24 @@ class MasterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(
-                MasterViewController.checkApptentiveMessageCount(notification:)
-            ),
-            name: .UIApplicationDidBecomeActive,
-            object: nil
-        )
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(
-                MasterViewController.checkApptentiveMessageCount(notification:)
-            ),
-            name: .ApptentiveMessageCenterUnreadCountChanged,
-            object: nil
-        )
+//        // Do any additional setup after loading the view.
+//        NotificationCenter.default.addObserver(
+//            self,
+//            selector: #selector(
+//                MasterViewController.checkApptentiveMessageCount(notification:)
+//            ),
+//            name: .UIApplication.didBecomeActiveNotification,
+//            object: nil
+//        )
+        
+//        NotificationCenter.default.addObserver(
+//            self,
+//            selector: #selector(
+//                MasterViewController.checkApptentiveMessageCount(notification:)
+//            ),
+//            name: .ApptentiveMessageCenterUnreadCountChanged,
+//            object: nil
+//        )
         
         
         

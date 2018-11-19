@@ -280,7 +280,7 @@ class ProfileViewController: UIViewController, UserNeeded {
             guard let user = PetDateController.shared.user else {
                 return
             }
-            let spinner = UIActivityIndicatorView(activityIndicatorStyle: .white)
+            let spinner = UIActivityIndicatorView(style: .white)
             spinner.center = sender.center
             sender.addSubview(spinner)
             spinner.startAnimating()

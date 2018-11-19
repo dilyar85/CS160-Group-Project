@@ -737,7 +737,7 @@ class User: NSObject, NSCoding {
     
     func uploadFile(image: UIImage, callback: @escaping(JSON?) -> ()) {
         
-        guard let jpg = UIImagePNGRepresentation(image) else {
+        guard let jpg = image.pngData() else {
             callback(false)
             return
         }

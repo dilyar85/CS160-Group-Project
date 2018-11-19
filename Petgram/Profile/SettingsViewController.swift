@@ -279,8 +279,9 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
             
         // feedback
         case (1, 0):
+            break
             
-            ATConnect.sharedConnection().presentMessageCenter(from: self)
+//            ATConnect.sharedConnection().presentMessageCenter(from: self)
             
         // rate or share
         case (1, 1):

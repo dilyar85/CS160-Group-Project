@@ -47,7 +47,7 @@ extension UIViewController {
         }
         for vc in self.deepChildViewControllers {
             vc.dismiss(animated: false, completion: nil)
-            vc.removeFromParentViewController()
+            vc.removeFromParent()
             for sv in vc.view.deepSubviews {
                 sv.removeFromSuperview()
             }
@@ -65,7 +65,7 @@ extension UIViewController {
 
 private func addChildren(of viewController: UIViewController, to children: inout [UIViewController]) {
     children.append(viewController)
-    for cvc in viewController.childViewControllers {
+    for cvc in viewController.children {
         addChildren(of: cvc, to: &children)
     }
     if let presented = viewController.presentedViewController {
@@ -124,7 +124,7 @@ extension UITextField{
         self.textColor = .white
         self.attributedPlaceholder = NSAttributedString(
             string: self.placeholder!,
-            attributes: [NSForegroundColorAttributeName: UIColor.neturalPlaceHolderColor]
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.neturalPlaceHolderColor]
         )
         self.tintColor = .white
     }
@@ -133,7 +133,7 @@ extension UITextField{
         self.textColor = .black
         self.attributedPlaceholder = NSAttributedString(
             string: self.placeholder!,
-            attributes: [NSForegroundColorAttributeName: UIColor.ottoDarkText]
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.ottoDarkText]
         )
         self.autocapitalizationType = .sentences
         self.autocorrectionType = .no
@@ -181,7 +181,7 @@ extension UITextField{
         self.textColor = .errorText
         self.attributedPlaceholder = NSAttributedString(
             string: self.placeholder!,
-            attributes: [NSForegroundColorAttributeName: UIColor.errorText]
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.errorText]
         )
         self.tintColor = .white
     }
@@ -297,19 +297,19 @@ extension UIFont {
 // MARK: UILayoutPriority Extension
 
 extension UILayoutPriority {
-    static let veryLow:  UILayoutPriority = 1
-    static let low:      UILayoutPriority = 250
-    static let medium:   UILayoutPriority = 500
-    static let high:     UILayoutPriority = 750
-    static let veryHigh: UILayoutPriority = 999
-    static let required: UILayoutPriority = 1000
+    static let veryLow:  UILayoutPriority = UILayoutPriority(rawValue: 1)
+    static let low:      UILayoutPriority = UILayoutPriority(rawValue: 250)
+    static let medium:   UILayoutPriority = UILayoutPriority(rawValue: 500)
+    static let high:     UILayoutPriority = UILayoutPriority(rawValue: 750)
+    static let veryHigh: UILayoutPriority = UILayoutPriority(rawValue: 999)
+    static let required: UILayoutPriority = UILayoutPriority(rawValue: 1000)
 }
 
 // MARK: NSLayoutConstraint Extension
 
 extension NSLayoutConstraint {
     
-    convenience init(item firstItem: Any, attribute firstAttribute: NSLayoutAttribute, relatedBy relation: NSLayoutRelation, toItem secondItem: Any?, attribute secondAttribute: NSLayoutAttribute, multiplier: CGFloat, constant: CGFloat, priority: UILayoutPriority) {
+    convenience init(item firstItem: Any, attribute firstAttribute: NSLayoutConstraint.Attribute, relatedBy relation: NSLayoutConstraint.Relation, toItem secondItem: Any?, attribute secondAttribute: NSLayoutConstraint.Attribute, multiplier: CGFloat, constant: CGFloat, priority: UILayoutPriority) {
         
         self.init(
             item: firstItem,

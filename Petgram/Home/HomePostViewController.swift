@@ -317,7 +317,7 @@ class HomePostTableViewCell: UITableViewCell {
             }
             
             let likedCount = usersInfo.count
-            self.likedCountButton.setTitle("\(likedCount)", for: UIControlState.normal)
+            self.likedCountButton.setTitle("\(likedCount)", for: UIControl.State.normal)
             self.likedCountButton.isUserInteractionEnabled = true
             self.likedCountButton.isHidden = false
             

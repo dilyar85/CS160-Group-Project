@@ -14,7 +14,7 @@ class EditPetProfileViewController: UIViewController, UserNeeded {
     
     var user: User?
     
-
+    
     @IBOutlet weak var profileImageView: UIImageView!
     
     @IBOutlet weak var nameLabel: UILabel!
@@ -54,14 +54,6 @@ class EditPetProfileViewController: UIViewController, UserNeeded {
     
     @IBAction func adoptedDateButtonTapped() {
         
-        show(_ title: String,
-             doneButtonTitle: String = "Done",
-             cancelButtonTitle: String = "Cancel",
-             defaultDate: Date = Date(),
-             minimumDate: Date? = nil, maximumDate: Date? = nil,
-             datePickerMode: UIDatePickerMode = .dateAndTime,
-             callback: @escaping DatePickerCallback) {
-        
         DatePickerDialog().show("Please select adopted date", doneButtonTitle: "Finish", cancelButtonTitle: "Cancel", datePickerMode: .date) { (date) in
             
             guard let date = date else {
@@ -88,24 +80,25 @@ class EditPetProfileViewController: UIViewController, UserNeeded {
                 key: LCUserClassKey.petAdoptDate.rawValue,
                 value: date.getString(withFormat: "YYYY-MM-dd"),
                 completion: { (success) in
-                LoadingShade.remove()
-                
-                guard success else {
-                    let overlay = WarningOverlayView(retryWarningWithRetryAction: { (overlay) in
-                        overlay.animateOut()
-                        self.adoptedDateButtonTapped()
-                    }, cancelAction: { (overlay) in
-                        overlay.animateOut()
-                    })
-                    overlay.animateIn()
-                    return
-                }
-                
-                self.adoptedDateLabel.text = self.user?.petAdoptDate?.getString(withFormat: "YYYY-MM-dd")
-                
+                    LoadingShade.remove()
+                    
+                    guard success else {
+                        let overlay = WarningOverlayView(retryWarningWithRetryAction: { (overlay) in
+                            overlay.animateOut()
+                            self.adoptedDateButtonTapped()
+                        }, cancelAction: { (overlay) in
+                            overlay.animateOut()
+                        })
+                        overlay.animateIn()
+                        return
+                    }
+                    
+                    self.adoptedDateLabel.text = self.user?.petAdoptDate?.getString(withFormat: "YYYY-MM-dd")
+                    
             })
             
         }
+        
     }
     
     // MARK: View Set Up

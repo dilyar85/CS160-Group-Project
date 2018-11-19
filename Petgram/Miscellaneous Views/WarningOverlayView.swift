@@ -112,7 +112,6 @@ class WarningOverlayView: UIView {
         // accessibility
         topButton.isAccessibilityElement = true
         topButton.accessibilityLabel = topButtonTitle
-        topButton.accessibilityTraits = UIAccessibilityTraitButton
         topButton.add { [weak self] in
             guard let strongSelf = self else {
                 return
@@ -128,7 +127,7 @@ class WarningOverlayView: UIView {
             // accessibility
             bottomButton.isAccessibilityElement = true
             bottomButton.accessibilityLabel = bottomText
-            bottomButton.accessibilityTraits = UIAccessibilityTraitButton
+            bottomButton.accessibilityTraits = UIAccessibilityTraits.button
             bottomButton.add { [weak self] in
                 guard let strongSelf = self else {
                     return
@@ -157,7 +156,7 @@ class WarningOverlayView: UIView {
         }
         
         let font = topButton.font
-        let attributes = [NSFontAttributeName: font]
+        let attributes = [NSAttributedString.Key.font: font]
         let options: NSStringDrawingOptions = [.usesLineFragmentOrigin, .usesFontLeading]
         let bounding = CGSize(
             width: CGFloat.greatestFiniteMagnitude,
@@ -281,7 +280,7 @@ class WarningOverlayView: UIView {
             return
         }
         
-        window.windowLevel = UIWindowLevelStatusBar + 1
+        window.windowLevel = UIWindow.Level.statusBar + 1
         
         self.translatesAutoresizingMaskIntoConstraints = false
         
@@ -326,7 +325,7 @@ class WarningOverlayView: UIView {
             self.backgroundColor = .clear
         }, completion: { _ in
             self.removeFromSuperview()
-            UIApplication.shared.keyWindow?.windowLevel = UIWindowLevelNormal
+            UIApplication.shared.keyWindow?.windowLevel = UIWindow.Level.normal
         })
     }
     

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		00E2A48421A1FF1600EBF88F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A48321A1FF1600EBF88F /* AppDelegate.swift */; };
-		00E2A48621A1FF1600EBF88F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A48521A1FF1600EBF88F /* ViewController.swift */; };
 		00E2A48921A1FF1600EBF88F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E2A48721A1FF1600EBF88F /* Main.storyboard */; };
 		00E2A48C21A1FF1600EBF88F /* Petgram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A48A21A1FF1600EBF88F /* Petgram.xcdatamodeld */; };
 		00E2A48E21A1FF1800EBF88F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E2A48D21A1FF1800EBF88F /* Assets.xcassets */; };
@@ -79,7 +78,6 @@
 /* Begin PBXFileReference section */
 		00E2A48021A1FF1600EBF88F /* Petgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Petgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E2A48321A1FF1600EBF88F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		00E2A48521A1FF1600EBF88F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		00E2A48821A1FF1600EBF88F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00E2A48B21A1FF1600EBF88F /* Petgram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Petgram.xcdatamodel; sourceTree = "<group>"; };
 		00E2A48D21A1FF1800EBF88F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -197,7 +195,6 @@
 				00E2A4B721A20D9B00EBF88F /* User */,
 				00E2A4B421A20BF000EBF88F /* Home */,
 				00E2A48321A1FF1600EBF88F /* AppDelegate.swift */,
-				00E2A48521A1FF1600EBF88F /* ViewController.swift */,
 				00E2A48721A1FF1600EBF88F /* Main.storyboard */,
 				00E2A48D21A1FF1800EBF88F /* Assets.xcassets */,
 				00E2A48F21A1FF1800EBF88F /* LaunchScreen.storyboard */,
@@ -546,7 +543,6 @@
 			files = (
 				00E2A58521A2509E00EBF88F /* ImageDownloadManager.swift in Sources */,
 				00E2A4BB21A20E4D00EBF88F /* UserManager.swift in Sources */,
-				00E2A48621A1FF1600EBF88F /* ViewController.swift in Sources */,
 				00E2A56921A24E5100EBF88F /* EditPetProfileViewController.swift in Sources */,
 				00E2A56A21A24E5100EBF88F /* FeedbackNotificationNumberView.swift in Sources */,
 				00E2A56C21A24E5100EBF88F /* EnterTextInfoViewController.swift in Sources */,

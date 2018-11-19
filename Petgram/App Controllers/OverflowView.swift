@@ -121,7 +121,7 @@ private class OptionButton: UIButton {
         
         self.isAccessibilityElement = true
         self.accessibilityLabel = action.displayName(in: context)
-        self.accessibilityTraits = UIAccessibilityTraitButton
+        self.accessibilityTraits = UIAccessibilityTraits.button
     }
     
 }
@@ -460,7 +460,7 @@ class OverflowView: UIView {
         }
     }
     
-    func remove() {
+    @objc func remove() {
         self.removeTimer?.invalidate()
         self.removeTimer = nil
         self.layoutIfNeeded()
@@ -563,7 +563,7 @@ extension OverflowView: UIImagePickerControllerDelegate, UINavigationControllerD
         OverflowView.imageOverflowView = nil
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         PetDateController.shared.masterViewController?.dismiss(
             animated: true,
             completion: nil
@@ -571,7 +571,7 @@ extension OverflowView: UIImagePickerControllerDelegate, UINavigationControllerD
         OverflowView.imageOverflowView = nil
         
         guard
-            let image = info[UIImagePickerControllerEditedImage] as? UIImage,
+            let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage,
             let user = PetDateController.shared.user else {
                 return
         }

@@ -54,7 +54,7 @@ class ForgotPasswordViewController: UIViewController, UITextFieldDelegate {
         self.textField.tintColor = .white
         self.textField.attributedPlaceholder = NSAttributedString(
             string: "Email",
-            attributes: [NSForegroundColorAttributeName: UIColor(white: 1.0, alpha: 0.4)]
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor(white: 1.0, alpha: 0.4)]
         )
         
         self.successImage.alpha = 0.0

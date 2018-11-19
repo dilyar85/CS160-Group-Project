@@ -125,12 +125,12 @@ class PostMaster: NSObject, UserNeeded {
             }
         }, catch: nil, finally: nil)
         
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(PostMaster.attemptRequests),
-            name: .UIApplicationDidBecomeActive,
-            object: nil
-        )
+//        NotificationCenter.default.addObserver(
+//            self,
+//            selector: #selector(PostMaster.attemptRequests),
+//            name: .UIApplication.didBecomeActiveNotification,
+//            object: nil
+//        )
     }
     
     var user: User? {
@@ -176,7 +176,7 @@ class PostMaster: NSObject, UserNeeded {
         }
     }
     
-    func attemptRequests() {
+    @objc func attemptRequests() {
         
         guard let manager = self.user?.authenticatedAFManager, self.requests.count > 0 else {
             return

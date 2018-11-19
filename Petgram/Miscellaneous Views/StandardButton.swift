@@ -136,7 +136,7 @@ class StandardButton: UIView {
         self.bodyLayer.lineWidth = 1
         
         self.isAccessibilityElement = true
-        self.accessibilityTraits = UIAccessibilityTraitButton
+        self.accessibilityTraits = UIAccessibilityTraits.button
     }
     
     

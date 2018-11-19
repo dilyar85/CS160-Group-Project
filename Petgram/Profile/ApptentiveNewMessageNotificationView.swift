@@ -37,7 +37,7 @@ class ApptentiveNewMessageNotificationView: UIWindow {
     static func height(with text: String) -> CGFloat {
         let titleWidth = UIScreen.main.bounds.width - 95 // minus margins
         let constrainSize = CGSize(width: titleWidth, height: CGFloat.greatestFiniteMagnitude)
-        let attributes = [NSFontAttributeName: font]
+        let attributes = [NSAttributedString.Key.font: font]
         let expectedSize = text.boundingRect(
             with: constrainSize,
             options: [.usesLineFragmentOrigin, .usesFontLeading],
@@ -68,13 +68,13 @@ class ApptentiveNewMessageNotificationView: UIWindow {
             self.label.numberOfLines = 0
             self.body.addSubview(self.label)
             
-            self.closeButton.addTarget(
-                self,
-                action: #selector(ApptentiveNewMessageNotificationView.hide),
-                for: .touchUpInside
-            )
+//            self.closeButton.addTarget(
+//                self,
+//                action: #selector(ApptentiveNewMessageNotificationView.hide),
+//                for: .touchUpInside
+//            )
             self.closeButton.setImage(#imageLiteral(resourceName: "button_x_white"), for: .normal)
-            self.closeButton.imageEdgeInsets = UIEdgeInsetsMake(10, 10, 15, 15)
+            self.closeButton.imageEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 15, right: 15)
             self.closeButton.alpha = 0.5
             self.body.addSubview(self.closeButton)
             
@@ -122,9 +122,9 @@ class ApptentiveNewMessageNotificationView: UIWindow {
             NSLayoutConstraint.activate([closeHeight, closeBottom])
         }
         
-        self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(ApptentiveNewMessageNotificationView.tapped)))
+//        self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(ApptentiveNewMessageNotificationView.tapped)))
         
-        self.windowLevel = UIWindowLevelStatusBar + 1
+        self.windowLevel = UIWindow.Level.statusBar + 1
     }
     
     private var open = false
@@ -144,31 +144,31 @@ class ApptentiveNewMessageNotificationView: UIWindow {
         
     }
     
-    func hide() {
-        guard self.open else {
-            return
-        }
-        self.open = false
-        
-        runOnMainThread {
-            UIView.animate(
-                withDuration: 0.2,
-                animations: {
-                    self.body.frame = self.frame.offsetBy(dx: 0, dy: -height)
-            },
-                completion: { _ in
-                    self.isHidden = true
-                    self.delegate?.apptentiveNewMessageNotificationViewDidClose(self)
-            }
-            )
-        }
-    }
+//    func hide() {
+//        guard self.open else {
+//            return
+//        }
+//        self.open = false
+//
+//        runOnMainThread {
+//            UIView.animate(
+//                withDuration: 0.2,
+//                animations: {
+//                    self.body.frame = self.frame.offsetBy(dx: 0, dy: -ApptentiveNewMessageNotificationView.height)
+//            },
+//                completion: { _ in
+//                    self.isHidden = true
+//                    self.delegate?.apptentiveNewMessageNotificationViewDidClose(self)
+//            }
+//            )
+//        }
+//    }
     
-    @objc private func tapped() {
-        if let topVC = UIApplication.shared.keyWindow?.rootViewController {
-            ATConnect.sharedConnection().presentMessageCenter(from: topVC)
-        }
-        self.hide()
-    }
+//    @objc private func tapped() {
+//        if let topVC = UIApplication.shared.keyWindow?.rootViewController {
+//            ATConnect.sharedConnection().presentMessageCenter(from: topVC)
+//        }
+//        self.hide()
+//    }
     
 }
