@@ -32,6 +32,11 @@
 		00E2A4D621A24C6B00EBF88F /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A4D521A24C6B00EBF88F /* ForgotPasswordViewController.swift */; };
 		00E2A4D921A24CF100EBF88F /* EmptySegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A4D821A24CF100EBF88F /* EmptySegue.swift */; };
 		00E2A4DB21A24D1400EBF88F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E2A4DA21A24D1400EBF88F /* Launch Screen.storyboard */; };
+		00E2A55A21A24D6A00EBF88F /* NewCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A55521A24D6900EBF88F /* NewCountView.swift */; };
+		00E2A55B21A24D6A00EBF88F /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A55621A24D6900EBF88F /* CircleImageView.swift */; };
+		00E2A55C21A24D6A00EBF88F /* StandardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A55721A24D6900EBF88F /* StandardButton.swift */; };
+		00E2A55D21A24D6A00EBF88F /* LoadingShade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A55821A24D6900EBF88F /* LoadingShade.swift */; };
+		00E2A55E21A24D6A00EBF88F /* WarningOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A55921A24D6A00EBF88F /* WarningOverlayView.swift */; };
 		D421A5B2AEA4A286FB392270 /* Pods_Petgram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23681414BDB5449BF91E70EE /* Pods_Petgram.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +89,11 @@
 		00E2A4D521A24C6B00EBF88F /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		00E2A4D821A24CF100EBF88F /* EmptySegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySegue.swift; sourceTree = "<group>"; };
 		00E2A4DA21A24D1400EBF88F /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		00E2A55521A24D6900EBF88F /* NewCountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCountView.swift; sourceTree = "<group>"; };
+		00E2A55621A24D6900EBF88F /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		00E2A55721A24D6900EBF88F /* StandardButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardButton.swift; sourceTree = "<group>"; };
+		00E2A55821A24D6900EBF88F /* LoadingShade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingShade.swift; sourceTree = "<group>"; };
+		00E2A55921A24D6A00EBF88F /* WarningOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarningOverlayView.swift; sourceTree = "<group>"; };
 		0FFDED0DA13E74099994D003 /* Pods-Petgram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Petgram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Petgram/Pods-Petgram.debug.xcconfig"; sourceTree = "<group>"; };
 		23681414BDB5449BF91E70EE /* Pods_Petgram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Petgram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9F304FE60451571418B6E5E /* Pods-Petgram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Petgram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Petgram/Pods-Petgram.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,6 +150,7 @@
 		00E2A48221A1FF1600EBF88F /* Petgram */ = {
 			isa = PBXGroup;
 			children = (
+				00E2A55421A24D6100EBF88F /* Miscellaneous Views */,
 				00E2A4D721A24CE700EBF88F /* Miscellaneous */,
 				00E2A4CE21A2472400EBF88F /* Server */,
 				00E2A4C121A2433900EBF88F /* App Controllers */,
@@ -232,6 +243,18 @@
 				00E2A4D821A24CF100EBF88F /* EmptySegue.swift */,
 			);
 			path = Miscellaneous;
+			sourceTree = "<group>";
+		};
+		00E2A55421A24D6100EBF88F /* Miscellaneous Views */ = {
+			isa = PBXGroup;
+			children = (
+				00E2A55621A24D6900EBF88F /* CircleImageView.swift */,
+				00E2A55821A24D6900EBF88F /* LoadingShade.swift */,
+				00E2A55521A24D6900EBF88F /* NewCountView.swift */,
+				00E2A55721A24D6900EBF88F /* StandardButton.swift */,
+				00E2A55921A24D6A00EBF88F /* WarningOverlayView.swift */,
+			);
+			path = "Miscellaneous Views";
 			sourceTree = "<group>";
 		};
 		9B95EDC29D388B445F7897FB /* Frameworks */ = {
@@ -463,6 +486,8 @@
 				00E2A4B621A20C1E00EBF88F /* HomePostViewController.swift in Sources */,
 				00E2A4C921A2454100EBF88F /* OverflowView.swift in Sources */,
 				00E2A48C21A1FF1600EBF88F /* Petgram.xcdatamodeld in Sources */,
+				00E2A55A21A24D6A00EBF88F /* NewCountView.swift in Sources */,
+				00E2A55C21A24D6A00EBF88F /* StandardButton.swift in Sources */,
 				00E2A4D221A2476100EBF88F /* ConnectRootViewController.swift in Sources */,
 				00E2A4BE21A22B1C00EBF88F /* AlamofireUtil.swift in Sources */,
 				00E2A4C721A2444C00EBF88F /* BottomNavigationView.swift in Sources */,
@@ -471,9 +496,12 @@
 				00E2A4C321A2434C00EBF88F /* MasterViewController.swift in Sources */,
 				00E2A4B921A20DA400EBF88F /* User.swift in Sources */,
 				00E2A4D621A24C6B00EBF88F /* ForgotPasswordViewController.swift in Sources */,
+				00E2A55B21A24D6A00EBF88F /* CircleImageView.swift in Sources */,
+				00E2A55D21A24D6A00EBF88F /* LoadingShade.swift in Sources */,
 				00E2A4C021A240C200EBF88F /* UserDisplayViewController.swift in Sources */,
 				00E2A48421A1FF1600EBF88F /* AppDelegate.swift in Sources */,
 				00E2A4D921A24CF100EBF88F /* EmptySegue.swift in Sources */,
+				00E2A55E21A24D6A00EBF88F /* WarningOverlayView.swift in Sources */,
 				00E2A4D021A2474A00EBF88F /* ConnectNavigationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
