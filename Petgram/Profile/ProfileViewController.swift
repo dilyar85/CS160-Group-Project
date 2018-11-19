@@ -139,18 +139,18 @@ class ProfileViewController: UIViewController, UserNeeded {
         switch type {
         case .selfUser:
             
-            self.titleLabel.text = "My Pet"
+            self.titleLabel.text = "Profile"
             
             // FIXME: Enable Constraints
             
-            let settingButton = UIButton(frame: CGRect(x: 355, y: 165, width: 50, height: 45))
+            let settingButton = UIButton(frame: CGRect(x: 300, y: 200, width: 50, height: 45))
             settingButton.addTarget(
                 self,
                 action: #selector(ProfileViewController.buttonTapped(_:)),
                 for: .touchUpInside
             )
             
-            let settingImaggView = UIImageView(frame: CGRect(x: 365, y: 175, width: 25, height: 25))
+            let settingImaggView = UIImageView(frame: CGRect(x: 300, y: 200, width: 25, height: 25))
             settingImaggView.image = #imageLiteral(resourceName: "button_gear_black")
             
             self.view.addSubview(settingButton)
@@ -358,12 +358,12 @@ class ProfileViewController: UIViewController, UserNeeded {
         case .selfUser:
             self.nameLabel.text = user.petName
             self.petSpentDaysLaebl.text =
-                Date().interval(ofComponent: .day, fromDate: user.petAdoptDate ?? Date()).description + " 天"
+                Date().interval(ofComponent: .day, fromDate: user.petAdoptDate ?? Date()).description + " days"
             self.petBreedLabel.text = user.petBreed
         case .otherUser(let userInfo):
             self.nameLabel.text = userInfo.petName
             self.petSpentDaysLaebl.text =
-                Date().interval(ofComponent: .day, fromDate: userInfo.petAdopteDate ?? Date()).description + " 天"
+                Date().interval(ofComponent: .day, fromDate: userInfo.petAdopteDate ?? Date()).description + " days"
             self.petBreedLabel.text = userInfo.petBreed
         }
         
