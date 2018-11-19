@@ -45,6 +45,17 @@
 		00E2A56D21A24E5100EBF88F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A56521A24E5100EBF88F /* SettingsViewController.swift */; };
 		00E2A56E21A24E5100EBF88F /* ApptentiveNewMessageNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A56621A24E5100EBF88F /* ApptentiveNewMessageNotificationView.swift */; };
 		00E2A56F21A24E5100EBF88F /* LegalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A56721A24E5100EBF88F /* LegalViewController.swift */; };
+		00E2A57721A2509600EBF88F /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A57021A2509500EBF88F /* NotificationManager.swift */; };
+		00E2A57821A2509600EBF88F /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A57121A2509500EBF88F /* UIKitExtensions.swift */; };
+		00E2A57921A2509600EBF88F /* DispatchUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A57221A2509600EBF88F /* DispatchUtil.swift */; };
+		00E2A57A21A2509600EBF88F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A57321A2509600EBF88F /* Constants.swift */; };
+		00E2A57B21A2509600EBF88F /* CoreGraphicsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A57421A2509600EBF88F /* CoreGraphicsUtil.swift */; };
+		00E2A57C21A2509600EBF88F /* SwiftExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A57521A2509600EBF88F /* SwiftExtensions.swift */; };
+		00E2A57D21A2509600EBF88F /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A57621A2509600EBF88F /* Weak.swift */; };
+		00E2A58221A2509E00EBF88F /* FoudationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A57E21A2509E00EBF88F /* FoudationUtil.swift */; };
+		00E2A58321A2509E00EBF88F /* PostMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A57F21A2509E00EBF88F /* PostMaster.swift */; };
+		00E2A58421A2509E00EBF88F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A58021A2509E00EBF88F /* Logger.swift */; };
+		00E2A58521A2509E00EBF88F /* ImageDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A58121A2509E00EBF88F /* ImageDownloadManager.swift */; };
 		D421A5B2AEA4A286FB392270 /* Pods_Petgram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23681414BDB5449BF91E70EE /* Pods_Petgram.framework */; };
 /* End PBXBuildFile section */
 
@@ -110,6 +121,17 @@
 		00E2A56521A24E5100EBF88F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		00E2A56621A24E5100EBF88F /* ApptentiveNewMessageNotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApptentiveNewMessageNotificationView.swift; sourceTree = "<group>"; };
 		00E2A56721A24E5100EBF88F /* LegalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegalViewController.swift; sourceTree = "<group>"; };
+		00E2A57021A2509500EBF88F /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		00E2A57121A2509500EBF88F /* UIKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		00E2A57221A2509600EBF88F /* DispatchUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchUtil.swift; sourceTree = "<group>"; };
+		00E2A57321A2509600EBF88F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		00E2A57421A2509600EBF88F /* CoreGraphicsUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreGraphicsUtil.swift; sourceTree = "<group>"; };
+		00E2A57521A2509600EBF88F /* SwiftExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftExtensions.swift; sourceTree = "<group>"; };
+		00E2A57621A2509600EBF88F /* Weak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
+		00E2A57E21A2509E00EBF88F /* FoudationUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoudationUtil.swift; sourceTree = "<group>"; };
+		00E2A57F21A2509E00EBF88F /* PostMaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostMaster.swift; sourceTree = "<group>"; };
+		00E2A58021A2509E00EBF88F /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		00E2A58121A2509E00EBF88F /* ImageDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadManager.swift; sourceTree = "<group>"; };
 		0FFDED0DA13E74099994D003 /* Pods-Petgram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Petgram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Petgram/Pods-Petgram.debug.xcconfig"; sourceTree = "<group>"; };
 		23681414BDB5449BF91E70EE /* Pods_Petgram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Petgram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9F304FE60451571418B6E5E /* Pods-Petgram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Petgram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Petgram/Pods-Petgram.release.xcconfig"; sourceTree = "<group>"; };
@@ -224,6 +246,17 @@
 		00E2A4BC21A22B1500EBF88F /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				00E2A57E21A2509E00EBF88F /* FoudationUtil.swift */,
+				00E2A58121A2509E00EBF88F /* ImageDownloadManager.swift */,
+				00E2A58021A2509E00EBF88F /* Logger.swift */,
+				00E2A57F21A2509E00EBF88F /* PostMaster.swift */,
+				00E2A57321A2509600EBF88F /* Constants.swift */,
+				00E2A57421A2509600EBF88F /* CoreGraphicsUtil.swift */,
+				00E2A57221A2509600EBF88F /* DispatchUtil.swift */,
+				00E2A57021A2509500EBF88F /* NotificationManager.swift */,
+				00E2A57521A2509600EBF88F /* SwiftExtensions.swift */,
+				00E2A57121A2509500EBF88F /* UIKitExtensions.swift */,
+				00E2A57621A2509600EBF88F /* Weak.swift */,
 				00E2A4BD21A22B1C00EBF88F /* AlamofireUtil.swift */,
 			);
 			path = Util;
@@ -511,6 +544,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00E2A58521A2509E00EBF88F /* ImageDownloadManager.swift in Sources */,
 				00E2A4BB21A20E4D00EBF88F /* UserManager.swift in Sources */,
 				00E2A48621A1FF1600EBF88F /* ViewController.swift in Sources */,
 				00E2A56921A24E5100EBF88F /* EditPetProfileViewController.swift in Sources */,
@@ -526,23 +560,33 @@
 				00E2A4D221A2476100EBF88F /* ConnectRootViewController.swift in Sources */,
 				00E2A4BE21A22B1C00EBF88F /* AlamofireUtil.swift in Sources */,
 				00E2A4C721A2444C00EBF88F /* BottomNavigationView.swift in Sources */,
+				00E2A57721A2509600EBF88F /* NotificationManager.swift in Sources */,
 				00E2A4D421A2479E00EBF88F /* ConnectWithEmailViewController.swift in Sources */,
 				00E2A4CB21A245B800EBF88F /* PetDateController.swift in Sources */,
+				00E2A57821A2509600EBF88F /* UIKitExtensions.swift in Sources */,
 				00E2A56E21A24E5100EBF88F /* ApptentiveNewMessageNotificationView.swift in Sources */,
 				00E2A4C321A2434C00EBF88F /* MasterViewController.swift in Sources */,
 				00E2A4B921A20DA400EBF88F /* User.swift in Sources */,
 				00E2A56B21A24E5100EBF88F /* ProfileViewController.swift in Sources */,
+				00E2A57C21A2509600EBF88F /* SwiftExtensions.swift in Sources */,
 				00E2A4D621A24C6B00EBF88F /* ForgotPasswordViewController.swift in Sources */,
+				00E2A58421A2509E00EBF88F /* Logger.swift in Sources */,
 				00E2A55B21A24D6A00EBF88F /* CircleImageView.swift in Sources */,
 				00E2A55D21A24D6A00EBF88F /* LoadingShade.swift in Sources */,
 				00E2A56F21A24E5100EBF88F /* LegalViewController.swift in Sources */,
 				00E2A56D21A24E5100EBF88F /* SettingsViewController.swift in Sources */,
+				00E2A57D21A2509600EBF88F /* Weak.swift in Sources */,
 				00E2A4C021A240C200EBF88F /* UserDisplayViewController.swift in Sources */,
+				00E2A57921A2509600EBF88F /* DispatchUtil.swift in Sources */,
 				00E2A56821A24E5100EBF88F /* SelectionViewController.swift in Sources */,
 				00E2A48421A1FF1600EBF88F /* AppDelegate.swift in Sources */,
 				00E2A4D921A24CF100EBF88F /* EmptySegue.swift in Sources */,
 				00E2A55E21A24D6A00EBF88F /* WarningOverlayView.swift in Sources */,
 				00E2A4D021A2474A00EBF88F /* ConnectNavigationViewController.swift in Sources */,
+				00E2A58321A2509E00EBF88F /* PostMaster.swift in Sources */,
+				00E2A58221A2509E00EBF88F /* FoudationUtil.swift in Sources */,
+				00E2A57A21A2509600EBF88F /* Constants.swift in Sources */,
+				00E2A57B21A2509600EBF88F /* CoreGraphicsUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
