@@ -1,5 +1,26 @@
 PODS:
   - Alamofire (4.7.3)
+  - apptentive-ios (5.2.2)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - DatePickerDialog (2.0)
+  - FacebookCore (0.5.0):
+    - Bolts (~> 1.9)
+    - FBSDKCoreKit (~> 4.37)
+  - FacebookLogin (0.5.0):
+    - Bolts (~> 1.9)
+    - FacebookCore (~> 0.5)
+    - FBSDKCoreKit (~> 4.37)
+    - FBSDKLoginKit (~> 4.37)
+  - FBSDKCoreKit (4.38.1):
+    - Bolts (~> 1.9)
+  - FBSDKLoginKit (4.38.1):
+    - FBSDKCoreKit
+  - Kingfisher (4.10.1)
   - LeanCloud (13.0.0):
     - LeanCloud/Foundation (= 13.0.0)
     - LeanCloud/LocalStorage (= 13.0.0)
@@ -11,19 +32,53 @@ PODS:
     - Alamofire (~> 4.7.3)
     - LeanCloud/Foundation
     - LeanCloud/LocalStorage
+  - Localytics (4.2.0)
+  - SwiftTryCatch (0.0.1)
+  - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
+  - Alamofire
+  - apptentive-ios
+  - DatePickerDialog
+  - FacebookCore
+  - FacebookLogin
+  - Kingfisher
   - LeanCloud (~> 13.0.0)
+  - Localytics (~> 4.2.0)
+  - SwiftTryCatch
+  - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - apptentive-ios
+    - Bolts
+    - DatePickerDialog
+    - FacebookCore
+    - FacebookLogin
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - Kingfisher
     - LeanCloud
+    - Localytics
+    - SwiftTryCatch
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  apptentive-ios: a38ab3b2244f7294a06dd08e56afb8018d414bf4
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  DatePickerDialog: 5e1c24d9fe6506cd45dbc573eed7b0a251b1c09d
+  FacebookCore: 74288d0add931d361b1596beae787ab72c438249
+  FacebookLogin: ebcf34714a1cb9f0759d9f071cfb01ed500996cf
+  FBSDKCoreKit: 8d47857400e2f5bdea697a80daff882e91c84ef6
+  FBSDKLoginKit: 4621c690d9dd8628031a4791497062183ea34b0d
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   LeanCloud: 93670d0250e19cb5e7750b6bcd3f671559dbc8b9
+  Localytics: 59cf99592a35c18e62d5994f2365ad3ccecc4982
+  SwiftTryCatch: fb6d2b34abe48efd69578dac919293a44f95b481
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: b7ea6ed48c8206c757ffcf2de4d892c8b1aac0d6
+PODFILE CHECKSUM: 69d04b7e5143bfb0c64eed0fe081c6a08b190333
 
 COCOAPODS: 1.5.3
