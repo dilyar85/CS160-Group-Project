@@ -37,6 +37,14 @@
 		00E2A55C21A24D6A00EBF88F /* StandardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A55721A24D6900EBF88F /* StandardButton.swift */; };
 		00E2A55D21A24D6A00EBF88F /* LoadingShade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A55821A24D6900EBF88F /* LoadingShade.swift */; };
 		00E2A55E21A24D6A00EBF88F /* WarningOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A55921A24D6A00EBF88F /* WarningOverlayView.swift */; };
+		00E2A56821A24E5100EBF88F /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A56021A24E5100EBF88F /* SelectionViewController.swift */; };
+		00E2A56921A24E5100EBF88F /* EditPetProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A56121A24E5100EBF88F /* EditPetProfileViewController.swift */; };
+		00E2A56A21A24E5100EBF88F /* FeedbackNotificationNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A56221A24E5100EBF88F /* FeedbackNotificationNumberView.swift */; };
+		00E2A56B21A24E5100EBF88F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A56321A24E5100EBF88F /* ProfileViewController.swift */; };
+		00E2A56C21A24E5100EBF88F /* EnterTextInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A56421A24E5100EBF88F /* EnterTextInfoViewController.swift */; };
+		00E2A56D21A24E5100EBF88F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A56521A24E5100EBF88F /* SettingsViewController.swift */; };
+		00E2A56E21A24E5100EBF88F /* ApptentiveNewMessageNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A56621A24E5100EBF88F /* ApptentiveNewMessageNotificationView.swift */; };
+		00E2A56F21A24E5100EBF88F /* LegalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A56721A24E5100EBF88F /* LegalViewController.swift */; };
 		D421A5B2AEA4A286FB392270 /* Pods_Petgram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23681414BDB5449BF91E70EE /* Pods_Petgram.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +102,14 @@
 		00E2A55721A24D6900EBF88F /* StandardButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardButton.swift; sourceTree = "<group>"; };
 		00E2A55821A24D6900EBF88F /* LoadingShade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingShade.swift; sourceTree = "<group>"; };
 		00E2A55921A24D6A00EBF88F /* WarningOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarningOverlayView.swift; sourceTree = "<group>"; };
+		00E2A56021A24E5100EBF88F /* SelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
+		00E2A56121A24E5100EBF88F /* EditPetProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPetProfileViewController.swift; sourceTree = "<group>"; };
+		00E2A56221A24E5100EBF88F /* FeedbackNotificationNumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackNotificationNumberView.swift; sourceTree = "<group>"; };
+		00E2A56321A24E5100EBF88F /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		00E2A56421A24E5100EBF88F /* EnterTextInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterTextInfoViewController.swift; sourceTree = "<group>"; };
+		00E2A56521A24E5100EBF88F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		00E2A56621A24E5100EBF88F /* ApptentiveNewMessageNotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApptentiveNewMessageNotificationView.swift; sourceTree = "<group>"; };
+		00E2A56721A24E5100EBF88F /* LegalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegalViewController.swift; sourceTree = "<group>"; };
 		0FFDED0DA13E74099994D003 /* Pods-Petgram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Petgram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Petgram/Pods-Petgram.debug.xcconfig"; sourceTree = "<group>"; };
 		23681414BDB5449BF91E70EE /* Pods_Petgram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Petgram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9F304FE60451571418B6E5E /* Pods-Petgram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Petgram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Petgram/Pods-Petgram.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +166,7 @@
 		00E2A48221A1FF1600EBF88F /* Petgram */ = {
 			isa = PBXGroup;
 			children = (
+				00E2A55F21A24E4000EBF88F /* Profile */,
 				00E2A55421A24D6100EBF88F /* Miscellaneous Views */,
 				00E2A4D721A24CE700EBF88F /* Miscellaneous */,
 				00E2A4CE21A2472400EBF88F /* Server */,
@@ -255,6 +272,21 @@
 				00E2A55921A24D6A00EBF88F /* WarningOverlayView.swift */,
 			);
 			path = "Miscellaneous Views";
+			sourceTree = "<group>";
+		};
+		00E2A55F21A24E4000EBF88F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				00E2A56621A24E5100EBF88F /* ApptentiveNewMessageNotificationView.swift */,
+				00E2A56121A24E5100EBF88F /* EditPetProfileViewController.swift */,
+				00E2A56421A24E5100EBF88F /* EnterTextInfoViewController.swift */,
+				00E2A56221A24E5100EBF88F /* FeedbackNotificationNumberView.swift */,
+				00E2A56721A24E5100EBF88F /* LegalViewController.swift */,
+				00E2A56321A24E5100EBF88F /* ProfileViewController.swift */,
+				00E2A56021A24E5100EBF88F /* SelectionViewController.swift */,
+				00E2A56521A24E5100EBF88F /* SettingsViewController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		9B95EDC29D388B445F7897FB /* Frameworks */ = {
@@ -481,6 +513,9 @@
 			files = (
 				00E2A4BB21A20E4D00EBF88F /* UserManager.swift in Sources */,
 				00E2A48621A1FF1600EBF88F /* ViewController.swift in Sources */,
+				00E2A56921A24E5100EBF88F /* EditPetProfileViewController.swift in Sources */,
+				00E2A56A21A24E5100EBF88F /* FeedbackNotificationNumberView.swift in Sources */,
+				00E2A56C21A24E5100EBF88F /* EnterTextInfoViewController.swift in Sources */,
 				00E2A4CD21A2467E00EBF88F /* PostViewController.swift in Sources */,
 				00E2A4C521A2437F00EBF88F /* ContainerViewController.swift in Sources */,
 				00E2A4B621A20C1E00EBF88F /* HomePostViewController.swift in Sources */,
@@ -493,12 +528,17 @@
 				00E2A4C721A2444C00EBF88F /* BottomNavigationView.swift in Sources */,
 				00E2A4D421A2479E00EBF88F /* ConnectWithEmailViewController.swift in Sources */,
 				00E2A4CB21A245B800EBF88F /* PetDateController.swift in Sources */,
+				00E2A56E21A24E5100EBF88F /* ApptentiveNewMessageNotificationView.swift in Sources */,
 				00E2A4C321A2434C00EBF88F /* MasterViewController.swift in Sources */,
 				00E2A4B921A20DA400EBF88F /* User.swift in Sources */,
+				00E2A56B21A24E5100EBF88F /* ProfileViewController.swift in Sources */,
 				00E2A4D621A24C6B00EBF88F /* ForgotPasswordViewController.swift in Sources */,
 				00E2A55B21A24D6A00EBF88F /* CircleImageView.swift in Sources */,
 				00E2A55D21A24D6A00EBF88F /* LoadingShade.swift in Sources */,
+				00E2A56F21A24E5100EBF88F /* LegalViewController.swift in Sources */,
+				00E2A56D21A24E5100EBF88F /* SettingsViewController.swift in Sources */,
 				00E2A4C021A240C200EBF88F /* UserDisplayViewController.swift in Sources */,
+				00E2A56821A24E5100EBF88F /* SelectionViewController.swift in Sources */,
 				00E2A48421A1FF1600EBF88F /* AppDelegate.swift in Sources */,
 				00E2A4D921A24CF100EBF88F /* EmptySegue.swift in Sources */,
 				00E2A55E21A24D6A00EBF88F /* WarningOverlayView.swift in Sources */,
