@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "17c329b61e3b1c59b811d07690aeb5fd--getting-married-just-married.jpg",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "17c329b61e3b1c59b811d07690aeb5fd--getting-married-just-married-1.jpg",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "17c329b61e3b1c59b811d07690aeb5fd--getting-married-just-married-2.jpg",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
