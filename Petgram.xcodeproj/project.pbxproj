@@ -23,6 +23,7 @@
 		00E2A4C321A2434C00EBF88F /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A4C221A2434C00EBF88F /* MasterViewController.swift */; };
 		00E2A4C521A2437F00EBF88F /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A4C421A2437F00EBF88F /* ContainerViewController.swift */; };
 		00E2A4C721A2444C00EBF88F /* BottomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A4C621A2444C00EBF88F /* BottomNavigationView.swift */; };
+		00E2A4C921A2454100EBF88F /* OverflowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A4C821A2454100EBF88F /* OverflowView.swift */; };
 		D421A5B2AEA4A286FB392270 /* Pods_Petgram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23681414BDB5449BF91E70EE /* Pods_Petgram.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		00E2A4C221A2434C00EBF88F /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		00E2A4C421A2437F00EBF88F /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		00E2A4C621A2444C00EBF88F /* BottomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationView.swift; sourceTree = "<group>"; };
+		00E2A4C821A2454100EBF88F /* OverflowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverflowView.swift; sourceTree = "<group>"; };
 		0FFDED0DA13E74099994D003 /* Pods-Petgram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Petgram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Petgram/Pods-Petgram.debug.xcconfig"; sourceTree = "<group>"; };
 		23681414BDB5449BF91E70EE /* Pods_Petgram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Petgram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9F304FE60451571418B6E5E /* Pods-Petgram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Petgram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Petgram/Pods-Petgram.release.xcconfig"; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				00E2A4C221A2434C00EBF88F /* MasterViewController.swift */,
 				00E2A4C421A2437F00EBF88F /* ContainerViewController.swift */,
 				00E2A4C621A2444C00EBF88F /* BottomNavigationView.swift */,
+				00E2A4C821A2454100EBF88F /* OverflowView.swift */,
 			);
 			path = "App Controllers";
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				00E2A48621A1FF1600EBF88F /* ViewController.swift in Sources */,
 				00E2A4C521A2437F00EBF88F /* ContainerViewController.swift in Sources */,
 				00E2A4B621A20C1E00EBF88F /* HomePostViewController.swift in Sources */,
+				00E2A4C921A2454100EBF88F /* OverflowView.swift in Sources */,
 				00E2A48C21A1FF1600EBF88F /* Petgram.xcdatamodeld in Sources */,
 				00E2A4BE21A22B1C00EBF88F /* AlamofireUtil.swift in Sources */,
 				00E2A4C721A2444C00EBF88F /* BottomNavigationView.swift in Sources */,
