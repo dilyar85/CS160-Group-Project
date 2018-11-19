@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		00E2A48421A1FF1600EBF88F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A48321A1FF1600EBF88F /* AppDelegate.swift */; };
-		00E2A48921A1FF1600EBF88F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E2A48721A1FF1600EBF88F /* Main.storyboard */; };
 		00E2A48C21A1FF1600EBF88F /* Petgram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A48A21A1FF1600EBF88F /* Petgram.xcdatamodeld */; };
 		00E2A48E21A1FF1800EBF88F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E2A48D21A1FF1800EBF88F /* Assets.xcassets */; };
 		00E2A49121A1FF1800EBF88F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E2A48F21A1FF1800EBF88F /* LaunchScreen.storyboard */; };
@@ -55,6 +54,8 @@
 		00E2A58321A2509E00EBF88F /* PostMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A57F21A2509E00EBF88F /* PostMaster.swift */; };
 		00E2A58421A2509E00EBF88F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A58021A2509E00EBF88F /* Logger.swift */; };
 		00E2A58521A2509E00EBF88F /* ImageDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E2A58121A2509E00EBF88F /* ImageDownloadManager.swift */; };
+		00E2A58721A34DA400EBF88F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E2A58621A34DA400EBF88F /* Main.storyboard */; };
+		00E2A58921A34DC800EBF88F /* Connect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00E2A58821A34DC800EBF88F /* Connect.storyboard */; };
 		D421A5B2AEA4A286FB392270 /* Pods_Petgram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23681414BDB5449BF91E70EE /* Pods_Petgram.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,7 +79,6 @@
 /* Begin PBXFileReference section */
 		00E2A48021A1FF1600EBF88F /* Petgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Petgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E2A48321A1FF1600EBF88F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		00E2A48821A1FF1600EBF88F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00E2A48B21A1FF1600EBF88F /* Petgram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Petgram.xcdatamodel; sourceTree = "<group>"; };
 		00E2A48D21A1FF1800EBF88F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00E2A49021A1FF1800EBF88F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -130,6 +130,8 @@
 		00E2A57F21A2509E00EBF88F /* PostMaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostMaster.swift; sourceTree = "<group>"; };
 		00E2A58021A2509E00EBF88F /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		00E2A58121A2509E00EBF88F /* ImageDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadManager.swift; sourceTree = "<group>"; };
+		00E2A58621A34DA400EBF88F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		00E2A58821A34DC800EBF88F /* Connect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Connect.storyboard; sourceTree = "<group>"; };
 		0FFDED0DA13E74099994D003 /* Pods-Petgram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Petgram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Petgram/Pods-Petgram.debug.xcconfig"; sourceTree = "<group>"; };
 		23681414BDB5449BF91E70EE /* Pods_Petgram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Petgram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9F304FE60451571418B6E5E /* Pods-Petgram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Petgram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Petgram/Pods-Petgram.release.xcconfig"; sourceTree = "<group>"; };
@@ -195,7 +197,6 @@
 				00E2A4B721A20D9B00EBF88F /* User */,
 				00E2A4B421A20BF000EBF88F /* Home */,
 				00E2A48321A1FF1600EBF88F /* AppDelegate.swift */,
-				00E2A48721A1FF1600EBF88F /* Main.storyboard */,
 				00E2A48D21A1FF1800EBF88F /* Assets.xcassets */,
 				00E2A48F21A1FF1800EBF88F /* LaunchScreen.storyboard */,
 				00E2A49221A1FF1800EBF88F /* Info.plist */,
@@ -262,6 +263,7 @@
 		00E2A4C121A2433900EBF88F /* App Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				00E2A58621A34DA400EBF88F /* Main.storyboard */,
 				00E2A4C221A2434C00EBF88F /* MasterViewController.swift */,
 				00E2A4C421A2437F00EBF88F /* ContainerViewController.swift */,
 				00E2A4C621A2444C00EBF88F /* BottomNavigationView.swift */,
@@ -275,6 +277,7 @@
 		00E2A4CE21A2472400EBF88F /* Server */ = {
 			isa = PBXGroup;
 			children = (
+				00E2A58821A34DC800EBF88F /* Connect.storyboard */,
 				00E2A4CF21A2474A00EBF88F /* ConnectNavigationViewController.swift */,
 				00E2A4D121A2476100EBF88F /* ConnectRootViewController.swift */,
 				00E2A4D321A2479E00EBF88F /* ConnectWithEmailViewController.swift */,
@@ -443,9 +446,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E2A49121A1FF1800EBF88F /* LaunchScreen.storyboard in Resources */,
+				00E2A58921A34DC800EBF88F /* Connect.storyboard in Resources */,
+				00E2A58721A34DA400EBF88F /* Main.storyboard in Resources */,
 				00E2A48E21A1FF1800EBF88F /* Assets.xcassets in Resources */,
 				00E2A4DB21A24D1400EBF88F /* Launch Screen.storyboard in Resources */,
-				00E2A48921A1FF1600EBF88F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,14 +622,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		00E2A48721A1FF1600EBF88F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				00E2A48821A1FF1600EBF88F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		00E2A48F21A1FF1800EBF88F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
