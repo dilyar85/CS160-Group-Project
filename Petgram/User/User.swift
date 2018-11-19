@@ -176,7 +176,7 @@ class User: NSObject, NSCoding {
                     }
                     else if json["code"] == 210 {
                         // TODO: Localize String
-                        callback(nil, "用户名与密码不匹配", nil)
+                        callback(nil, "Username and passwod not matched", nil)
                     }
                     else {
                         callback(nil, json["error"].stringValue, nil)
