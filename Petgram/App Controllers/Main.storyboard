@@ -586,41 +586,42 @@
                                             <constraint firstAttribute="width" constant="50" id="dn2-bx-7KO"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cvi-sP-XQr">
+                                        <rect key="frame" x="22" y="0.0" width="70" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Amn-Xb-UYu"/>
+                                            <constraint firstAttribute="width" constant="70" id="gcd-s9-qWe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelButtonTapped" destination="uEi-lx-Wyi" eventType="touchUpInside" id="UD3-lN-hOL"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0z-zx-l9d">
-                                        <rect key="frame" x="313" y="0.0" width="70" height="60"/>
+                                        <rect key="frame" x="293" y="0.0" width="70" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="Oi1-wu-f59"/>
                                             <constraint firstAttribute="width" constant="70" id="qbM-Y5-gIZ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="确认">
+                                        <state key="normal" title="Confirm">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="postButtonTapped" destination="uEi-lx-Wyi" eventType="touchUpInside" id="Ycq-1Z-2rA"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghs-LI-kBd">
-                                        <rect key="frame" x="0.0" y="0.0" width="70" height="60"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="70" id="Djw-L4-WdO"/>
-                                            <constraint firstAttribute="height" constant="60" id="P8Z-mY-hgs"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="取消">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="cancelButtonTapped" destination="uEi-lx-Wyi" eventType="touchUpInside" id="M7X-KN-Ve3"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.25098039220000001" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="Ghs-LI-kBd" firstAttribute="leading" secondItem="82i-1H-uFE" secondAttribute="leading" id="1qR-2t-AO5"/>
                                     <constraint firstItem="Jy3-I3-5Sl" firstAttribute="centerY" secondItem="82i-1H-uFE" secondAttribute="centerY" id="57Y-BY-vLQ"/>
-                                    <constraint firstAttribute="trailing" secondItem="P0z-zx-l9d" secondAttribute="trailing" id="Gql-nF-Hna"/>
-                                    <constraint firstItem="Ghs-LI-kBd" firstAttribute="top" secondItem="82i-1H-uFE" secondAttribute="top" id="NiY-nR-lkh"/>
+                                    <constraint firstAttribute="trailing" secondItem="P0z-zx-l9d" secondAttribute="trailing" constant="20" id="Gql-nF-Hna"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cvi-sP-XQr" secondAttribute="trailing" constant="291" id="KVS-gA-Upf"/>
+                                    <constraint firstItem="Cvi-sP-XQr" firstAttribute="leading" secondItem="82i-1H-uFE" secondAttribute="leading" constant="22" id="OpF-8b-BzX"/>
+                                    <constraint firstItem="Cvi-sP-XQr" firstAttribute="top" secondItem="82i-1H-uFE" secondAttribute="top" id="OyN-of-1yH"/>
                                     <constraint firstItem="Jy3-I3-5Sl" firstAttribute="centerX" secondItem="82i-1H-uFE" secondAttribute="centerX" id="Vi2-fZ-SYY"/>
                                     <constraint firstAttribute="height" constant="60" id="YOr-4L-gjd"/>
                                     <constraint firstItem="P0z-zx-l9d" firstAttribute="top" secondItem="82i-1H-uFE" secondAttribute="top" id="eRR-DH-Ind"/>
@@ -646,7 +647,7 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z1X-xk-rp2">
-                                <rect key="frame" x="0.0" y="262" width="375" height="516"/>
+                                <rect key="frame" x="0.0" y="262" width="375" height="475"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -658,7 +659,7 @@
                             <constraint firstItem="z1X-xk-rp2" firstAttribute="top" secondItem="61l-9n-skZ" secondAttribute="bottom" constant="20" id="Pd9-wO-G7Y"/>
                             <constraint firstItem="z1X-xk-rp2" firstAttribute="centerX" secondItem="7vS-su-7e2" secondAttribute="centerX" id="VOI-IH-GAn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="82i-1H-uFE" secondAttribute="trailing" constant="-20" id="hfR-wx-ku3"/>
-                            <constraint firstItem="vjs-n4-BBN" firstAttribute="top" secondItem="z1X-xk-rp2" secondAttribute="bottom" id="mdO-8V-D4c"/>
+                            <constraint firstItem="vjs-n4-BBN" firstAttribute="top" secondItem="z1X-xk-rp2" secondAttribute="bottom" constant="41" id="mdO-8V-D4c"/>
                             <constraint firstItem="z1X-xk-rp2" firstAttribute="width" secondItem="7vS-su-7e2" secondAttribute="width" id="o5X-VN-ZPe"/>
                             <constraint firstAttribute="leadingMargin" secondItem="61l-9n-skZ" secondAttribute="leading" id="p5t-KQ-STO"/>
                         </constraints>
@@ -671,7 +672,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JPb-Qy-SC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1999" y="2155"/>
+            <point key="canvasLocation" x="1997.5999999999999" y="2154.6798029556653"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Lvc-4I-u60">
