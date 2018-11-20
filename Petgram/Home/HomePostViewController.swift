@@ -59,10 +59,10 @@ class HomePostViewController: UIViewController, UserNeeded {
         }
         user.fetchTimeLine { (error, homePosts) in
             guard error == nil else {
-                let overlay = WarningOverlayView(title: "加载个人记录相册失败 :(", subtitle: "请确认网络连接正常", topButtonTitle: "再试一次", topButtonAction: { (overlay) in
+                let overlay = WarningOverlayView(title: "Load posts failed :(", subtitle: "Please check your connection", topButtonTitle: "Try again", topButtonAction: { (overlay) in
                     overlay.animateOut()
                     self.fetchTimeLine()
-                }, bottomButtonTitle: "取消", bottomButtonAction: { (overlay) in
+                }, bottomButtonTitle: "Cancel", bottomButtonAction: { (overlay) in
                     overlay.animateOut()
                 }, outsideAction: { (overlay) in
                     overlay.animateOut()
