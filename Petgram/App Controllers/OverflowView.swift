@@ -218,7 +218,7 @@ private class OptionsView: UIView {
         
         let cancelLabel = UILabel()
         // MARK: Multipe Language
-        cancelLabel.text = "关闭"
+        cancelLabel.text = "Cancel"
         cancelLabel.font = UIFont(ottoStyle: .roman, size: 15)
         cancelLabel.textColor = .ottoRed
         
@@ -277,7 +277,7 @@ private class OptionsView: UIView {
             relatedBy: .equal,
             toItem: cancelButton,
             attribute: .centerY,
-            multiplier: 1.0,
+            multiplier: 0.8,
             constant: 0.0
         )
         

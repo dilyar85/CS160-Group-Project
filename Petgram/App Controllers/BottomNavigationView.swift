@@ -59,11 +59,11 @@ import UIKit
         case .home:
             return "Home"
             //        case .search:
-        //            return "搜索"
+        //            return "Search"
         case .post:
             return "Post"
             //        case .date:
-        //            return "约会"
+        //            return "Date"
         case .profile:
             return "Mine"
         }
@@ -96,7 +96,7 @@ class BottomNavigationView: UIView, AppNavigatorNeeded {
     weak var delegate: BottomNavigationViewDelegate?
     
     private static let highlightedColor = UIColor.white
-    private static let unhighlightedColor = UIColor(white: 0.6, alpha: 1.0)
+    private static let unhighlightedColor = UIColor(white: 0.3, alpha: 1.0)
     
     static let height: CGFloat = 50
     
@@ -197,7 +197,7 @@ class BottomNavigationView: UIView, AppNavigatorNeeded {
                 relatedBy: .equal,
                 toItem: button,
                 attribute: .bottom,
-                multiplier: 1.0,
+                multiplier: 0.9,
                 constant: 0.0
             )
             
@@ -291,7 +291,7 @@ class BottomNavigationView: UIView, AppNavigatorNeeded {
                 relatedBy: .equal,
                 toItem: self,
                 attribute: .bottom,
-                multiplier: 1.0,
+                multiplier: 0.8,
                 constant: 0.0
             )
             
