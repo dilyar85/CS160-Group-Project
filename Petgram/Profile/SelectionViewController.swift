@@ -53,7 +53,7 @@ class SelectionListView: UIView {
     private func setup() {
         self.backgroundColor = .petBackground
         
-        self.titleLabel.font = UIFont(ottoStyle: .roman, size: 18)
+        self.titleLabel.font = UIFont(ottoStyle: .roman, size: 22)
         self.titleLabel.textColor = .white
         self.titleLabel.textAlignment = .center
         
@@ -89,7 +89,7 @@ class SelectionListView: UIView {
             ]
         
         let headerHoriz = NSLayoutConstraint.constraints(
-            withVisualFormat: "H:|-0-[back(==50)]-[title]-50-|",
+            withVisualFormat: "H:|-10-[back(==50)]-[title]-50-|",
             options: .alignAllCenterY,
             metrics: nil,
             views: views
@@ -101,7 +101,7 @@ class SelectionListView: UIView {
             views: views
         )
         let headerVerti = NSLayoutConstraint.constraints(
-            withVisualFormat: "V:|-38-[title]-12-[table]-0-|",
+            withVisualFormat: "V:|-50-[title]-20-[table]-0-|",
             options: [],
             metrics: nil,
             views: views
@@ -186,7 +186,7 @@ class SelectionViewController: UIViewController, UITabBarDelegate, UITableViewDa
         case .petGender:
             return "Please select gender"
         case .petBreed:
-            return "Please select breed}"
+            return "Please select breed"
             
         case .undefined:
             return ""
@@ -197,7 +197,7 @@ class SelectionViewController: UIViewController, UITabBarDelegate, UITableViewDa
     
     
     let genders: [String] = ["Boy", "Girl"]
-    let breeds: [String] = ["Affenpinscher", "BARBET", "Cairn Terrier", "Chihuahua", "Dachshund", "English Foxhound", "Fox Terrier", "Greyhound", "Havanese", "Kuvasz", "Labradoodle", "Yorkipoo", "Robert", "Ishan"]
+    let breeds: [String] = ["Affenpinscher", "Barbet", "Cairn Terrier", "Chihuahua", "Dachshund", "English Foxhound", "Fox Terrier", "Greyhound", "Havanese", "Kuvasz", "Labradoodle", "Yorkipoo", "Robert", "Ishan"]
     
     // MARK: UITableViewDelegate and UITableViewDataSouce
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
