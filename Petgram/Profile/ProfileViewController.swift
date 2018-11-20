@@ -229,16 +229,13 @@ class ProfileViewController: UIViewController, UserNeeded {
             }
             self.titleLabel.text = userInfo.petName
             
-            let backButton = UIButton(frame: CGRect(x: 0, y: 15, width: 50, height: 50))
+            let backButton = UIButton(frame: CGRect(x: 10, y: 30, width: 50, height: 50))
             backButton.setImage(#imageLiteral(resourceName: "back_button"), for: .normal)
             backButton.addTarget(self, action: #selector (ProfileViewController.backButtonTapped), for: .touchUpInside)
             
-            
             self.view.addSubview(backButton)
             
-            
-            
-            let followButton = UIButton(frame: CGRect(x: 305, y: 172, width: 100, height: 30))
+            let followButton = UIButton(frame: CGRect(x: 260, y: 195, width: 90, height: 30))
             followButton.isHidden = true
             followButton.isUserInteractionEnabled = false
             self.view.addSubview(followButton)
