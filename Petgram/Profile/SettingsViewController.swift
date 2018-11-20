@@ -243,7 +243,7 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
         let label = UILabel()
         switch section {
         case 0:
-            label.text = "Legal"
+            label.text = "Setup"
         case 1:
             label.text = "Feedback"
         case 2:
