@@ -300,7 +300,7 @@ class HomePostTableViewCell: UITableViewCell {
                 self.likedImage.isHidden = true
                 return
             }
-            self.likedImage.image = liked ? #imageLiteral(resourceName: "button_heart_full") : #imageLiteral(resourceName: "button_heart_empty")
+            self.likedImage.image = liked ? #imageLiteral(resourceName: "button_heart_full") : UIImage(imageLiteralResourceName: "overflow_heart")
             self.likedImage.isHidden = false
         }
     }

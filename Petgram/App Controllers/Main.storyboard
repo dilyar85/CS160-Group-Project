@@ -138,17 +138,18 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ca-rH-5Uk">
-                                <rect key="frame" x="-4" y="84" width="375" height="694"/>
+                                <rect key="frame" x="-4" y="84" width="379" height="694"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="582" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Bp-du-6hK">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="694"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="379" height="694"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="sectionIndexColor" red="0.25098039220000001" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomePostTableViewCell" rowHeight="582" id="8xs-6f-EZA" customClass="HomePostTableViewCell" customModule="Petgram" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="375" height="582"/>
+                                                <rect key="frame" x="0.0" y="28" width="379" height="582"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8xs-6f-EZA" id="oes-bP-bNb">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="581.66666666666663"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="379" height="581.66666666666663"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_no_picture" translatesAutoresizingMaskIntoConstraints="NO" id="sgL-rj-cYe" customClass="CircleImageView" customModule="Petgram" customModuleProvider="target">
@@ -165,19 +166,19 @@
                                                             </connections>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="卡卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1N-0A-RUn" userLabel="Pet Name Label">
-                                                            <rect key="frame" x="98" y="10" width="154" height="45"/>
+                                                            <rect key="frame" x="98" y="10" width="158" height="45"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="泰迪犬" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73Y-yW-msc" userLabel="Pet Breed Label">
-                                                            <rect key="frame" x="98" y="55" width="154" height="30"/>
+                                                            <rect key="frame" x="98" y="55" width="158" height="30"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gil-F6-JRq" userLabel="Follow Button">
-                                                            <rect key="frame" x="260" y="10.000000000000002" width="100" height="31.666666666666671"/>
+                                                            <rect key="frame" x="264" y="10.000000000000002" width="100" height="31.666666666666671"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="100" id="fqg-Y9-zcB"/>
                                                             </constraints>
@@ -187,41 +188,41 @@
                                                             </connections>
                                                         </button>
                                                         <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="S5U-W7-hlM">
-                                                            <rect key="frame" x="300" y="15.666666666666664" width="20" height="20"/>
+                                                            <rect key="frame" x="304" y="15.666666666666664" width="20" height="20"/>
                                                         </activityIndicatorView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xwh-cA-G6f" userLabel="Pet Location Label">
-                                                            <rect key="frame" x="260" y="49.666666666666664" width="100" height="20.999999999999993"/>
+                                                            <rect key="frame" x="264" y="49.666666666666664" width="100" height="20.999999999999993"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NO2-br-qRs" userLabel="Post Message Label">
-                                                            <rect key="frame" x="15" y="94.666666666666671" width="345" height="20.666666666666671"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NO2-br-qRs" userLabel="Post Message Label">
+                                                            <rect key="frame" x="15" y="94.666666666666671" width="349" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ggU-2X-Xxp" userLabel="Post Image View">
-                                                            <rect key="frame" x="4" y="123.33333333333331" width="375" height="350"/>
+                                                            <rect key="frame" x="4" y="123.66666666666669" width="379" height="350"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="350" id="MuC-Pl-VPU"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFu-rC-1yS" userLabel="Post Time Label">
-                                                            <rect key="frame" x="15" y="480.66666666666669" width="75" height="20"/>
+                                                            <rect key="frame" x="15" y="481" width="75" height="20"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button_heart_empty" translatesAutoresizingMaskIntoConstraints="NO" id="g5l-cX-hau" userLabel="Like Image">
-                                                            <rect key="frame" x="297.66666666666669" y="478.33333333333331" width="25" height="25"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="overflow_heart" translatesAutoresizingMaskIntoConstraints="NO" id="g5l-cX-hau" userLabel="Like Image">
+                                                            <rect key="frame" x="301.66666666666669" y="478.66666666666669" width="25" height="25"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="25" id="myY-8Z-Jjx"/>
                                                                 <constraint firstAttribute="height" constant="25" id="pHO-VR-Tdo"/>
                                                             </constraints>
                                                         </imageView>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScO-JL-cDx" userLabel="Like Button">
-                                                            <rect key="frame" x="280" y="470.66666666666669" width="60" height="40"/>
+                                                            <rect key="frame" x="284" y="471" width="60" height="40"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="40" id="6Wo-UX-dcr"/>
                                                                 <constraint firstAttribute="width" constant="60" id="pOr-sy-f23"/>
@@ -231,7 +232,7 @@
                                                             </connections>
                                                         </button>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LRo-6N-cJe" userLabel="Liked Users View">
-                                                            <rect key="frame" x="7" y="510.66666666666669" width="375" height="71.333333333333314"/>
+                                                            <rect key="frame" x="7" y="511" width="379" height="71"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cac-hw-cmD">
                                                                     <rect key="frame" x="8" y="17" width="30" height="30"/>
@@ -276,13 +277,15 @@
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 </imageView>
                                                             </subviews>
-                                                            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="backgroundColor" red="0.25098039220000001" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="tintColor" red="0.25098039220000001" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </view>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="button_more_blue" translatesAutoresizingMaskIntoConstraints="NO" id="hME-67-gJ3">
-                                                            <rect key="frame" x="376" y="474" width="25" height="25"/>
+                                                            <rect key="frame" x="351" y="477" width="25" height="25"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                     </subviews>
+                                                    <color key="backgroundColor" red="0.25098039220000001" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="trailingMargin" secondItem="gil-F6-JRq" secondAttribute="trailing" id="0FY-RU-kOx"/>
                                                         <constraint firstItem="y1N-0A-RUn" firstAttribute="leading" secondItem="sgL-rj-cYe" secondAttribute="trailing" constant="8" id="24U-bG-blf"/>
@@ -324,6 +327,8 @@
                                                         <constraint firstItem="sgL-rj-cYe" firstAttribute="top" secondItem="oes-bP-bNb" secondAttribute="topMargin" constant="-1" id="y4q-C7-1tB"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <color key="backgroundColor" red="0.25098039220000001" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.25098039220000001" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="LRo-6N-cJe" secondAttribute="bottom" id="x4Q-LA-xSv"/>
                                                 </constraints>
@@ -372,7 +377,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6Ca-rH-5Uk" firstAttribute="width" secondItem="gFc-ve-jgc" secondAttribute="width" id="7Ug-dY-iyq"/>
+                            <constraint firstItem="6Ca-rH-5Uk" firstAttribute="width" secondItem="gFc-ve-jgc" secondAttribute="width" constant="4" id="7Ug-dY-iyq"/>
                             <constraint firstItem="QlS-Gh-9Uq" firstAttribute="height" secondItem="gFc-ve-jgc" secondAttribute="height" multiplier="0.1" id="86y-Qz-RyZ"/>
                             <constraint firstItem="6Ca-rH-5Uk" firstAttribute="leading" secondItem="gFc-ve-jgc" secondAttribute="leadingMargin" constant="-20" id="Al5-LU-1xP"/>
                             <constraint firstItem="QlS-Gh-9Uq" firstAttribute="leading" secondItem="gFc-ve-jgc" secondAttribute="leadingMargin" constant="-20" id="Bte-pY-SMt"/>
@@ -389,7 +394,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0XN-RQ-hec" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2924.6376811594205" y="1317.3913043478262"/>
+            <point key="canvasLocation" x="2924" y="1316.7487684729065"/>
         </scene>
         <!--Users Display View Controller-->
         <scene sceneID="krt-ea-oXN">
@@ -1859,9 +1864,9 @@
         <image name="arrow_disclosure_white" width="11" height="17"/>
         <image name="arrow_left_white" width="13" height="22"/>
         <image name="back_button" width="13" height="22"/>
-        <image name="button_heart_empty" width="25" height="23"/>
         <image name="button_more_blue" width="16" height="4"/>
         <image name="button_save_blue" width="30" height="30"/>
+        <image name="overflow_heart" width="25" height="23"/>
         <image name="profile_camera" width="27" height="19"/>
         <image name="profile_no_picture" width="115" height="115"/>
         <image name="profile_success" width="50" height="50"/>
