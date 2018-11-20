@@ -337,13 +337,14 @@ extension UIButton {
             self.setTitle("Followed", for: .normal)
             self.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
             self.setTitleColor(UIColor.darkText, for: .normal)
-            self.backgroundColor = UIColor.white
+            self.backgroundColor = UIColor.ottoBlue
             self.addBorder(color: .ottoLightText)
         } else {
             self.setTitle("Follow", for: .normal)
             self.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
-            self.setTitleColor(UIColor.white, for: .normal)
-            self.backgroundColor = UIColor.ottoBlue
+            self.setTitleColor(UIColor.ottoDarkText, for: .normal)
+//            self.addBorder(color: .ottoLightText)
+            self.backgroundColor = UIColor.white
         }
 
     }

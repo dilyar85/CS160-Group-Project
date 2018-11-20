@@ -69,7 +69,7 @@ class SelectionListView: UIView {
         self.tableView.separatorColor = UIColor(white: 1.0, alpha: 0.5)
         self.tableView.separatorInset = UIEdgeInsets(
             top: 0.0,
-            left: 10.0,
+            left: 0.0,
             bottom: 0.0,
             right: 0.0
         )
