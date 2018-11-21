@@ -77,6 +77,28 @@ class PetgramTests: XCTestCase {
     }
     
     
+    //test 3
+    func testRoundedString() {
+        var input = 3000
+        var expected = "3.0k"
+        var result = input.roundedString
+        XCTAssertEqual(expected, result)
+        print("testRoundedString is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        input = 5000000
+        expected = "5.0m"
+        result = input.roundedString
+        XCTAssertEqual(expected, result)
+        print("testRoundedString() is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        //test for wrong results
+        input = 2000
+        let wrongExpected = "2k"
+        result = input.roundedString
+        XCTAssertNotEqual(expected, result)
+        print("testRoundedString is tested successfully")
+    }
+    
     
     
     
