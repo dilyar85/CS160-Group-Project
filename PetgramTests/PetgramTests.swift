@@ -240,6 +240,28 @@ class PetgramTests: XCTestCase {
         print("testSafeGet() is tested successfully. Expected: \(expectedNil); Result: \(result)")
     }
     
+    //test 10
+    func testDateInterval() {
+        let noon = Calendar.current.date(bySettingHour: 12, minute: 0, second: 0, of: Date())!
+        
+        let today = Date()
+        var input = Calendar.current.date(byAdding: .day, value: -1, to: noon)!
+        var expected = 2
+        var result = today.interval(ofComponent: Calendar.Component.day, fromDate: input)
+        XCTAssertEqual(expected, result)
+        print("testDateInterval() is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        input = Calendar.current.date(byAdding: .day, value: -2, to: noon)!
+        expected = 3
+        result = today.interval(ofComponent: Calendar.Component.day, fromDate: input)
+        XCTAssertEqual(expected, result)
+        print("testDateInterval() is tested successfully. Expected: \(expected); Result: \(result)")
+    }
     
+    
+    
+    
+    
+
 
 }
