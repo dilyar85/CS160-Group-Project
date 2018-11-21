@@ -317,7 +317,26 @@ class PetgramTests: XCTestCase {
     }
     
     
-
+    //test 14
+    func testNavigationName() {
+        var input = NavigationSection.home
+        var expected = "Home"
+        var result = input.name
+        XCTAssertEqual(expected, result)
+        print("testNavigationSelectedImage() is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        input = NavigationSection.post
+        expected = "Post"
+        result = input.name
+        XCTAssertEqual(expected, result)
+        print("testNavigationSelectedImage() is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        input = NavigationSection.profile
+        expected = "Mine"
+        result = input.name
+        XCTAssertEqual(expected, result)
+        print("testNavigationSelectedImage() is tested successfully. Expected: \(expected); Result: \(result)")
+    }
             
     
 
