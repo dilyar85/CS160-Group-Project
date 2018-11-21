@@ -258,7 +258,21 @@ class PetgramTests: XCTestCase {
         print("testDateInterval() is tested successfully. Expected: \(expected); Result: \(result)")
     }
     
-    
+    //test 11
+    func testDateGetString() {
+        let date = Date()
+        var input = "YYYY-MM-dd"
+        var expected = "2018-11-20"
+        var result = date.getString(withFormat: input)
+        XCTAssertEqual(expected, result)
+        print("testDateInterval() is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        input = "MM-dd-YYYY"
+        expected = "11-20-2018"
+        result = date.getString(withFormat: input)
+        XCTAssertEqual(expected, result)
+        print("testDateInterval() is tested successfully. Expected: \(expected); Result: \(result)")
+    }
     
     
     
