@@ -217,7 +217,29 @@ class PetgramTests: XCTestCase {
     }
     
     
+    //test 9
+    func testSafeGet() {
+        let array = [0,1,2,3,4,5]
+        var input = 3
+        var expected = 3
+        var result = array.safeGet(index: input)
+        XCTAssertEqual(expected, result)
+        print("testSafeGet() is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        input = 5
+        expected = 5
+        result = array.safeGet(index: input)
+        XCTAssertEqual(expected, result)
+        print("testSafeGet() is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        //test for out of boundary index
+        input = 6
+        let expectedNil : Int? = nil
+        result = array.safeGet(index: input)
+        XCTAssertEqual(expectedNil, result)
+        print("testSafeGet() is tested successfully. Expected: \(expectedNil); Result: \(result)")
+    }
     
-
+    
 
 }
