@@ -338,6 +338,7 @@ class PetgramTests: XCTestCase {
         print("testNavigationSelectedImage() is tested successfully. Expected: \(expected); Result: \(result)")
     }
     
+    
     //test 15
     func testDisplayName() {
         var input = OverflowAction.chooseAPicture
@@ -353,6 +354,22 @@ class PetgramTests: XCTestCase {
         print("testDisplayName() is tested successfully. Expected: \(expected); Result: \(result)")
         
         
+    }
+    
+    
+    //test 16    
+    func testDisplayImage() {
+        var input = OverflowAction.chooseAPicture
+        var expected = #imageLiteral(resourceName: "overflow_frame")
+        var result = input.image
+        XCTAssertEqual(expected, result)
+        print("testDisplayImage() is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        input = OverflowAction.takeAPicture
+        expected = #imageLiteral(resourceName: "overflow_camera")
+        result = input.image
+        XCTAssertEqual(expected, result)
+        print("testDisplayImage() is tested successfully. Expected: \(expected); Result: \(result)")
     }
     
     
