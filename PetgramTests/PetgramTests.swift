@@ -122,8 +122,22 @@ class PetgramTests: XCTestCase {
         XCTAssertNotEqual(wrongExpected, result)
         print("testGetTitleText() is tested successfully.")
     }
+
     
-    
+    //test 5
+    func testPreferredStatusBarStyle() {
+        let input = SettingsViewController(nibName: nil, bundle: nil)
+        let expected = UIStatusBarStyle.lightContent
+        var result = input.preferredStatusBarStyle
+        XCTAssertEqual(expected, result)
+        print("testPreferredStatusBarStyle() is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        //test for wrong result
+        let wrongExpected = UIStatusBarStyle.default
+        result = input.preferredStatusBarStyle
+        XCTAssertNotEqual(wrongExpected, result)
+        print("testPreferredStatusBarStyle() is tested successfully.")
+    }
     
     
     
