@@ -176,6 +176,47 @@ class PetgramTests: XCTestCase {
     }
     
     
+    //test 8
+    func testIsValidEmail() {
+        var input = "abc123@gmail.com"
+        var expected = true
+        var result = input.isValidEmail
+        XCTAssertEqual(expected, result)
+        print("testIsValidEmail() is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        input = "321321dsa@sdadsa.cnsda"
+        expected = true
+        result = input.isValidEmail
+        XCTAssertEqual(expected, result)
+        print("testIsValidEmail() is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        //start testing for invalid email address
+        input = "@sda.com"
+        expected = false
+        result = input.isValidEmail
+        XCTAssertEqual(expected, result)
+        print("testIsValidEmail() is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        input = "sadsa.cn"
+        expected = false
+        result = input.isValidEmail
+        XCTAssertEqual(expected, result)
+        print("testIsValidEmail() is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        input = "dsaj@gamil."
+        expected = false
+        result = input.isValidEmail
+        XCTAssertEqual(expected, result)
+        print("testIsValidEmail() is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        input = "gmail.com"
+        expected = false
+        result = input.isValidEmail
+        XCTAssertEqual(expected, result)
+        print("testIsValidEmail() is tested successfully. Expected: \(expected); Result: \(result)")
+    }
+    
+    
     
 
 
