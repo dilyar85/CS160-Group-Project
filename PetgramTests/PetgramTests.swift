@@ -100,6 +100,31 @@ class PetgramTests: XCTestCase {
     }
     
     
+    //test 4
+    func testGetTitleText() {
+        var input = SelectionViewState.petBreed
+        var expected = "Please select breed"
+        let svc = SelectionViewController(state: input)
+        var result = svc.getTitleText(from: input)
+        XCTAssertEqual(expected, result)
+        print("testGetTitleText() is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        input = SelectionViewState.petGender
+        expected = "Please select gender"
+        result = svc.getTitleText(from: input)
+        XCTAssertEqual(expected, result)
+        print("testGetTitleText() is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        //test for wrong result
+        input = SelectionViewState.undefined
+        let wrongExpected = "Please select gender"
+        result = svc.getTitleText(from: input)
+        XCTAssertNotEqual(wrongExpected, result)
+        print("testGetTitleText() is tested successfully.")
+    }
+    
+    
+    
     
     
 
