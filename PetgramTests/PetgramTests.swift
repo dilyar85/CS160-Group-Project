@@ -337,6 +337,25 @@ class PetgramTests: XCTestCase {
         XCTAssertEqual(expected, result)
         print("testNavigationSelectedImage() is tested successfully. Expected: \(expected); Result: \(result)")
     }
+    
+    //test 15
+    func testDisplayName() {
+        var input = OverflowAction.chooseAPicture
+        var expected = "Open Photos"
+        var result = input.displayName(in: OverflowViewContext.postPicture)
+        XCTAssertEqual(expected, result)
+        print("testDisplayName() is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        input = OverflowAction.takeAPicture
+        expected = "Take Picture"
+        result = input.displayName(in: OverflowViewContext.postPicture)
+        XCTAssertEqual(expected, result)
+        print("testDisplayName() is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        
+    }
+    
+    
             
     
 
