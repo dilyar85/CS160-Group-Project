@@ -55,7 +55,30 @@ class PetgramTests: XCTestCase {
     }
     
 
-
+    //test 2
+    func testDisplayTitile() {
+        var input = EnterTextInfoState.petName
+        var expected = "Update pet name"
+        var result = input.displayTitle
+        XCTAssertEqual(expected, result)
+        print("testDisplayTitle is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        input = EnterTextInfoState.location
+        expected = "Update pet location"
+        result = input.displayTitle
+        XCTAssertEqual(expected, result)
+        print("testDisplayTitle is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        input = EnterTextInfoState.undefined
+        expected = "Update info"
+        result = input.displayTitle
+        XCTAssertEqual(expected, result)
+        print("testDisplayTitle is tested successfully. Expected: \(expected); Result: \(result)")
+    }
+    
+    
+    
+    
     
 
 
