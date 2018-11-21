@@ -160,7 +160,22 @@ class PetgramTests: XCTestCase {
         print("testGetLabelText() is tested successfully. Expected: \(expected); Result: \(result)")
     }
     
-   
+    //test 7
+    func testStrip() {
+        var input = " abc@gmail.com "
+        var expected = "abc@gmail.com"
+        var result = input.strip()
+        XCTAssertEqual(expected, result)
+        print("testStrip() is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        input = "   dd@hotmail.com    "
+        expected = "dd@hotmail.com"
+        result = input.strip()
+        XCTAssertEqual(expected, result)
+        print("testStrip() is tested successfully. Expected: \(expected); Result: \(result)")
+    }
+    
+    
     
 
 
