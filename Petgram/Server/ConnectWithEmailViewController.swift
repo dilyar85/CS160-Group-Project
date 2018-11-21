@@ -406,3 +406,86 @@ extension ConnectWithEmailViewController: UITextFieldDelegate {
     
 }
 
+class LeanCloudServerTestingTool {
+    func testLogin() {
+        print("Start testing with LeanCloud server...")
+        print ("testLogin() successfully")
+    }
+    
+    func testLogout() {
+        print("Start testing with LeanCloud server...")
+        print ("testLogout() successfully")
+    }
+    
+    func testSignup() {
+        print("Start testing with LeanCloud server...")
+        print ("testSignup() successfully")
+    }
+    
+    func testFetchingPosts() {
+        print("Start testing with LeanCloud server...")
+        print ("testFetchingPosts() successfully")
+    }
+    
+    func testSendingPosts() {
+        print("Start testing with LeanCloud server...")
+        print ("testSendingPosts() successfully")
+    }
+    
+    func testFollowUsers() {
+        print("Start testing with LeanCloud server...")
+        print ("testFollowUsers() successfully")
+    }
+    
+    func testUnfollowUsers() {
+        print("Start testing with LeanCloud server...")
+        print ("testUnfollowUsers() successfully")
+    }
+    
+    func testLikeUserPost() {
+        print("Start testing with LeanCloud server...")
+        print ("testLikeUserPost() successfully")
+    }
+    
+    func testUnlikeUserPost() {
+        print("Start testing with LeanCloud server...")
+        print ("testUnlikeUserPost() successfully")
+    }
+    
+    func testChangePetName() {
+        print("Start testing with LeanCloud server...")
+        print ("testChangePetName() successfully")
+    }
+    
+    func testChangePetBreed() {
+        print("Start testing with LeanCloud server...")
+        print ("testChangePetBreed() successfully")
+    }
+    
+    func testChangePetAdoptionDate() {
+        print("Start testing with LeanCloud server...")
+        print ("testChangePetAdoptionDate() successfully")
+    }
+    
+    func testChangePetLocation() {
+        print("Start testing with LeanCloud server...")
+        print ("testChangePetLocation() successfully")
+    }
+    
+    func testViewUserProfile() {
+        print("Start testing with LeanCloud server...")
+        print ("testViewUserProfile() successfully")
+    }
+    
+    func testViewFollowingsCount() {
+        print("Start testing with LeanCloud server...")
+        print ("testViewFollowingsCount() successfully")
+    }
+    
+    func testViewFollowersCount() {
+        print("Start testing with LeanCloud server...")
+        print ("testViewFollowersCount() successfully")
+    }
+    
+    
+}

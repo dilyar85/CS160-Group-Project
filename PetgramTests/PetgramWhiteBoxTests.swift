@@ -10,28 +10,6 @@ import XCTest
 @testable import Petgram
 
 class PetgramTests: XCTestCase {
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-
-    
-//    func getLCUserClassKey() -> LCUserClassKey{
-//        switch  self {
-//        case .petName:
-//            return .petName
-//        case .location:
-//            return .petCity
-//
-//        case .undefined:
-//            return .undefined
-//        }
-//    }
     
     //test 1
     func testGetLCUserClassKey() {
