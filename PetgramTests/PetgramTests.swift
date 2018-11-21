@@ -295,8 +295,29 @@ class PetgramTests: XCTestCase {
         print("testNavigationImage() is tested successfully. Expected: \(expected); Result: \(result)")
     }
     
+    //test 13
+    func testNavigationSelectedImage() {
+        var input = NavigationSection.home
+        var expected = #imageLiteral(resourceName: "nav_bar_library_selected")
+        var result = input.selectedImage
+        XCTAssertEqual(expected, result)
+        print("testNavigationSelectedImage() is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        input = NavigationSection.post
+        expected = #imageLiteral(resourceName: "nav_bar_browse_selected")
+        result = input.selectedImage
+        XCTAssertEqual(expected, result)
+        print("testNavigationSelectedImage() is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        input = NavigationSection.profile
+        expected = #imageLiteral(resourceName: "nav_bar_me_selected")
+        result = input.selectedImage
+        XCTAssertEqual(expected, result)
+        print("testNavigationSelectedImage() is tested successfully. Expected: \(expected); Result: \(result)")
+    }
     
-            
+    
+
             
     
 
