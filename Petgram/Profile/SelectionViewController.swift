@@ -180,8 +180,7 @@ class SelectionViewController: UIViewController, UITabBarDelegate, UITableViewDa
     
     
     
-    
-    private func getTitleText(from state: SelectionViewState) -> String {
+    public func getTitleText(from state: SelectionViewState) -> String {
         switch state {
         case .petGender:
             return "Please select gender"

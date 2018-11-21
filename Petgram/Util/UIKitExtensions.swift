@@ -11,7 +11,7 @@ import UIKit
 
 extension UIApplication {
     
-    var versionString: String {
+    public var versionString: String {
         return Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
     }
     

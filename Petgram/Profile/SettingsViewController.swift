@@ -241,22 +241,13 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
         header.backgroundColor = .petBackground
         
         let label = UILabel()
-        switch section {
-        case 0:
-            label.text = "Setup"
-        case 1:
-            label.text = "Feedback"
-        case 2:
-            label.text = "About"
-        default:
-            break
-        }
+        label.text = getLabelText(section)
+        
         label.font = UIFont(ottoStyle: .black, size: 18)
         label.textColor = .white
         label.sizeToFit()
         label.frame.leftMiddle = CGPoint(x: 13, y: header.bounds.height / 2.0)
         header.addSubview(label)
-        
         return header
     }
     
@@ -281,7 +272,7 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
         case (1, 0):
             break
             
-//            ATConnect.sharedConnection().presentMessageCenter(from: self)
+            //            ATConnect.sharedConnection().presentMessageCenter(from: self)
             
         // rate or share
         case (1, 1):
@@ -362,3 +353,18 @@ class VersionCell: UITableViewCell, UpdateableCell {
 class SignoutCell: UITableViewCell {
     static let identifier = "LogOutCell"
 }
+
+//for unit test 
+func getLabelText(_ section : Int) -> String {
+    switch section {
+    case 0:
+        return "Setup"
+    case 1:
+        return "Feedback"
+    case 2:
+        return "About"
+    default:
+        return ""
+    }
+}
+

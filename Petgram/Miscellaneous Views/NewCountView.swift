@@ -36,6 +36,7 @@ class NewCountView: UIView {
         container.backgroundColor = UIColor(r: 255, g: 70, b: 70)
         return container
     }()
+    
     private let label: UILabel = {
         let label = NewCountLabel()
         label.font = UIFont(ottoStyle: .roman, size: 12)

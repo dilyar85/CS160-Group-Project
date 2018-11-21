@@ -444,7 +444,6 @@ extension ContainerViewController: AppNavigator {
     private func openImages(data: [String: Any?]?, sender: Any) {
         self.view.endEditing(false)
         OverflowView.addToWindow(context: .postPicture, delegate: self)
-        
     }
     
     private func openProfile(data: [String: Any?]?, sender: Any) {

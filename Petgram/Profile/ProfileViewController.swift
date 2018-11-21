@@ -460,7 +460,7 @@ class PostTableViewCell: UITableViewCell {
 
 
 
-private extension Int {
+public extension Int {
     var roundedString: String {
         switch self {
         case let i where i >= 1_000_000:
