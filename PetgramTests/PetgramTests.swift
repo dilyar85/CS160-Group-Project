@@ -265,16 +265,39 @@ class PetgramTests: XCTestCase {
         var expected = "2018-11-20"
         var result = date.getString(withFormat: input)
         XCTAssertEqual(expected, result)
-        print("testDateInterval() is tested successfully. Expected: \(expected); Result: \(result)")
+        print("testDateGetString() is tested successfully. Expected: \(expected); Result: \(result)")
         
         input = "MM-dd-YYYY"
         expected = "11-20-2018"
         result = date.getString(withFormat: input)
         XCTAssertEqual(expected, result)
-        print("testDateInterval() is tested successfully. Expected: \(expected); Result: \(result)")
+        print("testDateGetString() is tested successfully. Expected: \(expected); Result: \(result)")
+    }
+    
+    //test 12
+    func testNavigationImage() {
+        var input = NavigationSection.home
+        var expected = #imageLiteral(resourceName: "nav_bar_library")
+        var result = input.image
+        XCTAssertEqual(expected, result)
+        print("testNavigationImage() is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        input = NavigationSection.post
+        expected = #imageLiteral(resourceName: "nav_bar_browse")
+        result = input.image
+        XCTAssertEqual(expected, result)
+        print("testNavigationImage() is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        input = NavigationSection.profile
+        expected = #imageLiteral(resourceName: "nav_bar_me")
+        result = input.image
+        XCTAssertEqual(expected, result)
+        print("testNavigationImage() is tested successfully. Expected: \(expected); Result: \(result)")
     }
     
     
+            
+            
     
 
 
