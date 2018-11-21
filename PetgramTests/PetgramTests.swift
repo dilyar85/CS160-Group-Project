@@ -139,7 +139,28 @@ class PetgramTests: XCTestCase {
         print("testPreferredStatusBarStyle() is tested successfully.")
     }
     
+    //test 6
+    func testGetLabelText() {
+        var input = 0
+        var expected = "Setup"
+        var result = getLabelText(input)
+        XCTAssertEqual(expected, result)
+        print("testGetLabelText() is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        input = 1
+        expected = "Feedback"
+        result = getLabelText(input)
+        XCTAssertEqual(expected, result)
+        print("testGetLabelText() is tested successfully. Expected: \(expected); Result: \(result)")
+        
+        input = 2
+        expected = "About"
+        result = getLabelText(input)
+        XCTAssertEqual(expected, result)
+        print("testGetLabelText() is tested successfully. Expected: \(expected); Result: \(result)")
+    }
     
+   
     
 
 
