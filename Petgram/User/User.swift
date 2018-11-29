@@ -1043,7 +1043,7 @@ class User: NSObject, NSCoding {
             guard let objectId = resultJson?.array?.first?["objectId"].string else {
                 return
             }
-            self.delelte(objectId: objectId, inClass: "Like")
+            self.delete(objectId: objectId, inClass: "Like")
         }
         
         
@@ -1125,7 +1125,7 @@ class User: NSObject, NSCoding {
     
     
     // MARK: Delete from Leancloud Table
-    func delelte(objectId: String, inClass className: String) {
+    func delete(objectId: String, inClass className: String) {
         let url = LeanCloudApiInfo.apiBaseUrl.rawValue + "/classes/" + className + "/" + objectId
         self.authenticatedAFManager.request(
             url,
