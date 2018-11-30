@@ -909,11 +909,17 @@ class User: NSObject, NSCoding {
             }
             
             let url = LeanCloudApiInfo.apiBaseUrl.rawValue + "/classes/_status"
-        
+            
+            let params: Parameters = [
+                "include": "owner" //to get the data from pointer "owner" in returned json
+            ]
+            
+            
             self.authenticatedAFManager.request(
                 url,
-                method: .get
-                ).responseJSON { (response) in
+                method: .get,
+                parameters: params
+            ).responseJSON { (response) in
                     switch response.result {
                     case .failure(let error):
                         Logger.log("Failed to fetch user timeline. Error Detail:\n\(error)", logType: .error)
