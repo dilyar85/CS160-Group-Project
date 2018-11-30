@@ -108,7 +108,7 @@ class LegalViewController: UIViewController {
         
         // FIXME: Change this legal url later
         
-        guard let url = URL(string: "https://www.ottoradio.com/html/legal/privacy-policy/") else {
+        guard let url = URL(string: "https://github.com/dilyar85/CS160-Group-Project") else {
             return
         }
         let request = URLRequest(url: url)
