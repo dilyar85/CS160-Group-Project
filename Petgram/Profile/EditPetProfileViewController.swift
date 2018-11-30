@@ -110,7 +110,14 @@ class EditPetProfileViewController: UIViewController, UserNeeded {
         
         NotificationCenter.default.addObserver(
             self,
-            selector: #selector (setUpPetInfoLabels),
+            selector: #selector (setupPetInfoLabels),
+            name: .userInfoDidUpdated,
+            object: nil
+        )
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector (setupAvatarView),
             name: .userInfoDidUpdated,
             object: nil
         )
@@ -119,12 +126,35 @@ class EditPetProfileViewController: UIViewController, UserNeeded {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.setUpPetInfoLabels()
+        self.setupPetInfoLabels()
+        
+
+        self.setupAvatarView()
+        
     }
+    
+    @objc private func setupAvatarView() {
+        guard let user = self.user else {
+            return
+        }
+        user.getUserInfo(withId: user.id) { (userInfo) in
+            guard let userInfo = userInfo else {
+            return
+            }
+            if let avatarUrl = userInfo.avatarUrl {
+            self.profileImageView.kf.indicatorType = .activity
+            self.profileImageView.kf.setImage(with: URL(string: avatarUrl))
+            }
+        }
+    }
+    
+   
+    
+    
     
     
     // If profile is not available, won't show their lables, just an arrow >
-    @objc private func setUpPetInfoLabels() {
+    @objc private func setupPetInfoLabels() {
         guard let user = self.user else {
             return
         }

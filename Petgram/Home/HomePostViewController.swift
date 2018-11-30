@@ -53,6 +53,7 @@ class HomePostViewController: UIViewController, UserNeeded {
     }
     
     
+    
     func fetchTimeLine() {
         guard let user = self.user else {
             return

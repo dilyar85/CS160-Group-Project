@@ -372,6 +372,7 @@ class User: NSObject, NSCoding {
     private(set) var password: String?
     private(set) var created: Date?
     
+
     
     private(set) var petName: String?
     private(set) var petAdoptDate: Date?
@@ -505,6 +506,7 @@ class User: NSObject, NSCoding {
         
         self.email = json[LCUserClassKey.email.rawValue].string
         self.username = json[LCUserClassKey.username.rawValue].string
+        
         
         //Pet Stats
         
