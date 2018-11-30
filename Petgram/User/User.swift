@@ -1118,6 +1118,7 @@ class User: NSObject, NSCoding {
             guard let objectId = resultJson?.array?.first?["objectId"].string else {
                 return
             }
+//            self.delete(objectId: objectId, inClass: "Like")
             self.delete(objectId: objectId, inClass: "Like")
         }
         

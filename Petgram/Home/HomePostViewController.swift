@@ -169,8 +169,8 @@ class HomePostTableViewCell: UITableViewCell {
     @IBOutlet weak var likedImage: UIImageView!
     
     
-    @IBOutlet var likedUserImageViews: [UIImageView]!
-    @IBOutlet weak var likedCountButton: UIButton!
+//    @IBOutlet var likedUserImageViews: [UIImageView]!
+//    @IBOutlet weak var likedCountButton: UIButton!
     
     @IBAction func likeButtonTapped(_ sender: UIButton) {
         guard let user = PetDateController.shared.user, let homePost = self.homePost, let liked = self.likedStatus else {
@@ -178,14 +178,14 @@ class HomePostTableViewCell: UITableViewCell {
         }
         
         if (liked) {
+//            user.dislike(post: homePost.post, done: )
             user.dislike(post: homePost.post)
-            self.likedStatus = !liked
+            self.likedStatus = false
         }
         else {
             user.like(post: homePost.post)
-            self.likedStatus = !liked
+            self.likedStatus = true
         }
-        
     }
     
     
@@ -205,7 +205,7 @@ class HomePostTableViewCell: UITableViewCell {
         
         let vc = mainStoryboard.instantiateViewController(withIdentifier: "UsersDisplayVC") as! UsersDisplayViewController
         vc.displayType = .likes
-        vc.usersInfo = self.likedUsersInfo
+//        vc.usersInfo = self.likedUsersInfo
         navController.pushViewController(vc, animated: true)
     }
     
@@ -215,49 +215,52 @@ class HomePostTableViewCell: UITableViewCell {
     var homePost: HomePost? {
         
         didSet {
-            guard let homePost = self.homePost else {
-                return
-            }
-            
-            let userInfo = homePost.userInfo
-            let post = homePost.post
-            
-            //Set follow button
-            self.setupFollowButton(with: userInfo)
-            
-            //Set Pet Location Label
-            self.setupPetLocation(with: userInfo)
-            
-            //Set Like Button
-            self.setupLikedStatus(for: post)
-            
-            //Setup Liked User
-            self.getLikedUser(for: post)
-            
-            self.petNameLabel.text = userInfo.petName
-            self.petBreedLabel.text = userInfo.petBreed
-            self.petLocationLabel.text = userInfo.petLocation
-            
-            self.postMessageLabel.text = post.postMessage
-            self.postTimeLabel.text = post.postDateTime?.getString(withFormat: "MMM dd")
-            
-            
-            
-            // Set Images
-            if let avatarUrl = userInfo.avatarUrl {
-                self.avatarImageView.kf.indicatorType = .activity
-                self.avatarImageView.kf.setImage(with: URL(string: avatarUrl))
-            } else {
-                self.postImageView.image = User.defaultProfileImage
-            }
-            
-            if let postImageUrl = post.imageUrl {
-                self.postImageView.kf.indicatorType = .activity
-                self.postImageView.kf.setImage(with: URL(string: postImageUrl))
-            } else {
-                self.postImageView.image = #imageLiteral(resourceName: "empty_post")
-            }
-            
+            updateHomePostView()
+        }
+    }
+    
+    func updateHomePostView() {
+        guard let homePost = self.homePost else {
+            return
+        }
+        
+        let userInfo = homePost.userInfo
+        let post = homePost.post
+        
+        //Set follow button
+        self.setupFollowButton(with: userInfo)
+        
+        //Set Pet Location Label
+        self.setupPetLocation(with: userInfo)
+        
+        //Set Like Button
+        self.setupLikedStatus(for: post)
+        
+        //Setup Liked User
+//        self.getLikedUser(for: post)
+        
+        self.petNameLabel.text = userInfo.petName
+        self.petBreedLabel.text = userInfo.petBreed
+        self.petLocationLabel.text = userInfo.petLocation
+        
+        self.postMessageLabel.text = post.postMessage
+        self.postTimeLabel.text = post.postDateTime?.getString(withFormat: "MMM dd")
+        
+        
+        
+        // Set Images
+        if let avatarUrl = userInfo.avatarUrl {
+            self.avatarImageView.kf.indicatorType = .activity
+            self.avatarImageView.kf.setImage(with: URL(string: avatarUrl))
+        } else {
+            self.postImageView.image = User.defaultProfileImage
+        }
+        
+        if let postImageUrl = post.imageUrl {
+            self.postImageView.kf.indicatorType = .activity
+            self.postImageView.kf.setImage(with: URL(string: postImageUrl))
+        } else {
+            self.postImageView.image = #imageLiteral(resourceName: "empty_post")
         }
     }
     
@@ -307,38 +310,38 @@ class HomePostTableViewCell: UITableViewCell {
         }
     }
     
-    var likedUsersInfo: [UserInfo]? {
-        didSet {
-            guard let usersInfo = self.likedUsersInfo else {
-                self.likedCountButton.isUserInteractionEnabled = false
-                self.likedCountButton.isHidden = true
-                for imageView in self.likedUserImageViews {
-                    imageView.isHidden = true
-                }
-                return
-            }
-            
-            let likedCount = usersInfo.count
-            self.likedCountButton.setTitle("\(likedCount)", for: UIControl.State.normal)
-            self.likedCountButton.isUserInteractionEnabled = true
-            self.likedCountButton.isHidden = false
-            
-            for (index, imageView) in self.likedUserImageViews.enumerated() {
-                guard let userInfo = usersInfo.safeGet(index: index) else {
-                    continue
-                }
-                
-                if let avatarUrl = userInfo.avatarUrl {
-                    imageView.kf.indicatorType = .activity
-                    imageView.kf.setImage(with: URL(string: avatarUrl))
-                } else {
-                    imageView.image = User.defaultProfileImage
-                }
-                
-                imageView.isHidden = false
-            }
-        }
-    }
+//    var likedUsersInfo: [UserInfo]? {
+//        didSet {
+//            guard let usersInfo = self.likedUsersInfo else {
+//                self.likedCountButton.isUserInteractionEnabled = false
+//                self.likedCountButton.isHidden = true
+//                for imageView in self.likedUserImageViews {
+//                    imageView.isHidden = true
+//                }
+//                return
+//            }
+//
+//            let likedCount = usersInfo.count
+//            self.likedCountButton.setTitle("\(likedCount)", for: UIControl.State.normal)
+//            self.likedCountButton.isUserInteractionEnabled = true
+//            self.likedCountButton.isHidden = false
+//
+//            for (index, imageView) in self.likedUserImageViews.enumerated() {
+//                guard let userInfo = usersInfo.safeGet(index: index) else {
+//                    continue
+//                }
+//
+//                if let avatarUrl = userInfo.avatarUrl {
+//                    imageView.kf.indicatorType = .activity
+//                    imageView.kf.setImage(with: URL(string: avatarUrl))
+//                } else {
+//                    imageView.image = User.defaultProfileImage
+//                }
+//
+//                imageView.isHidden = false
+//            }
+//        }
+//    }
     
     private func setupLikedStatus(for post: Post) {
         guard let user = PetDateController.shared.user else {
@@ -350,16 +353,16 @@ class HomePostTableViewCell: UITableViewCell {
         }
     }
     
-    private func getLikedUser(for post: Post) {
-        
-        guard let user = PetDateController.shared.user else {
-            self.likedUsersInfo = nil
-            return
-        }
-        
-        user.getLikedUsers(for: post, limitCount: HomePostTableViewCell.maxUserLikesDisplay) { (usersInfo) in
-            self.likedUsersInfo = usersInfo
-        }
-        
-    }
+//    private func getLikedUser(for post: Post) {
+//
+//        guard let user = PetDateController.shared.user else {
+//            self.likedUsersInfo = nil
+//            return
+//        }
+//
+//        user.getLikedUsers(for: post, limitCount: HomePostTableViewCell.maxUserLikesDisplay) { (usersInfo) in
+//            self.likedUsersInfo = usersInfo
+//        }
+//
+//    }
 }

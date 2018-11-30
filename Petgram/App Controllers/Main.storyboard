@@ -141,7 +141,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ca-rH-5Uk">
                                 <rect key="frame" x="-4" y="84" width="379" height="728"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorInsetReference="fromAutomaticInsets" allowsSelection="NO" rowHeight="564" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Bp-du-6hK">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorInsetReference="fromAutomaticInsets" allowsSelection="NO" rowHeight="516" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Bp-du-6hK">
                                         <rect key="frame" x="0.0" y="0.0" width="379" height="729"/>
                                         <color key="backgroundColor" red="0.25098039220000001" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.25098039220000001" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -149,11 +149,11 @@
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <color key="sectionIndexColor" red="0.25098039220000001" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="HomePostTableViewCell" rowHeight="564" id="8xs-6f-EZA" customClass="HomePostTableViewCell" customModule="Petgram" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="379" height="564"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="HomePostTableViewCell" rowHeight="516" id="8xs-6f-EZA" customClass="HomePostTableViewCell" customModule="Petgram" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="379" height="516"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8xs-6f-EZA" id="oes-bP-bNb">
-                                                    <rect key="frame" x="0.0" y="0.0" width="379" height="563.66666666666663"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="379" height="515.66666666666663"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_no_picture" translatesAutoresizingMaskIntoConstraints="NO" id="sgL-rj-cYe" customClass="CircleImageView" customModule="Petgram" customModuleProvider="target">
@@ -214,7 +214,7 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFu-rC-1yS" userLabel="Post Time Label">
                                                             <rect key="frame" x="15" y="481" width="75" height="20"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="overflow_heart" translatesAutoresizingMaskIntoConstraints="NO" id="g5l-cX-hau" userLabel="Like Image">
@@ -234,62 +234,6 @@
                                                                 <action selector="likeButtonTapped:" destination="8xs-6f-EZA" eventType="touchUpInside" id="v66-HW-JxB"/>
                                                             </connections>
                                                         </button>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LRo-6N-cJe" userLabel="Liked Users View">
-                                                            <rect key="frame" x="7" y="511" width="379" height="53"/>
-                                                            <subviews>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cac-hw-cmD">
-                                                                    <rect key="frame" x="8" y="17" width="30" height="30"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                </imageView>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NZP-m2-EqT">
-                                                                    <rect key="frame" x="46" y="16" width="35" height="35"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                </imageView>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cp9-GE-ZJj">
-                                                                    <rect key="frame" x="129" y="16" width="35" height="35"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                </imageView>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oWl-k5-SoO">
-                                                                    <rect key="frame" x="178" y="14" width="35" height="35"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                </imageView>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ij-BD-BcQ">
-                                                                    <rect key="frame" x="229" y="17" width="35" height="35"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                </imageView>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ha7-CA-jQe">
-                                                                    <rect key="frame" x="277" y="16" width="35" height="35"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                </imageView>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7bX-sc-OMx">
-                                                                    <rect key="frame" x="320" y="14" width="35" height="35"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                </imageView>
-                                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzL-TT-rvW">
-                                                                    <rect key="frame" x="368" y="10" width="45" height="45"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                    <state key="normal">
-                                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    </state>
-                                                                    <connections>
-                                                                        <action selector="likedCountButtonTapped" destination="8xs-6f-EZA" eventType="touchUpInside" id="HkE-wk-wyu"/>
-                                                                    </connections>
-                                                                </button>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xKQ-h1-a32">
-                                                                    <rect key="frame" x="89" y="14" width="35" height="35"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Liked by:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fxf-DP-plZ">
-                                                                    <rect key="frame" x="8" y="-6" width="51" height="15"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                            </subviews>
-                                                            <color key="backgroundColor" red="0.25098039220000001" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <color key="tintColor" red="0.25098039220000001" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </view>
                                                         <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button_more_white" translatesAutoresizingMaskIntoConstraints="NO" id="hME-67-gJ3">
                                                             <rect key="frame" x="347" y="471" width="16" height="40"/>
                                                         </imageView>
@@ -320,15 +264,12 @@
                                                         <constraint firstItem="ggU-2X-Xxp" firstAttribute="width" secondItem="oes-bP-bNb" secondAttribute="width" id="PDK-wb-vB7"/>
                                                         <constraint firstAttribute="trailingMargin" secondItem="NO2-br-qRs" secondAttribute="trailing" id="QVp-iW-d8B"/>
                                                         <constraint firstItem="ggU-2X-Xxp" firstAttribute="leading" secondItem="oes-bP-bNb" secondAttribute="leadingMargin" constant="-11" id="TAz-UH-KmQ"/>
-                                                        <constraint firstItem="LRo-6N-cJe" firstAttribute="top" secondItem="ScO-JL-cDx" secondAttribute="bottom" id="XHm-Rz-eqS"/>
                                                         <constraint firstItem="hME-67-gJ3" firstAttribute="top" secondItem="ScO-JL-cDx" secondAttribute="top" id="XpR-ev-ht0"/>
                                                         <constraint firstItem="Xwh-cA-G6f" firstAttribute="leading" secondItem="gil-F6-JRq" secondAttribute="leading" id="YVH-Ai-Nsg"/>
                                                         <constraint firstItem="S5U-W7-hlM" firstAttribute="centerX" secondItem="gil-F6-JRq" secondAttribute="centerX" id="YcV-Ym-kvO"/>
                                                         <constraint firstItem="mFu-rC-1yS" firstAttribute="top" secondItem="ggU-2X-Xxp" secondAttribute="bottom" constant="7.3333333333333144" id="a4t-lK-TYP"/>
-                                                        <constraint firstItem="LRo-6N-cJe" firstAttribute="leading" secondItem="oes-bP-bNb" secondAttribute="leadingMargin" constant="-8" id="buS-EP-aPc"/>
                                                         <constraint firstItem="gil-F6-JRq" firstAttribute="leading" secondItem="y1N-0A-RUn" secondAttribute="trailing" constant="8" id="dey-eA-wrC"/>
                                                         <constraint firstItem="y1N-0A-RUn" firstAttribute="top" secondItem="sgL-rj-cYe" secondAttribute="top" id="dre-0r-h4B"/>
-                                                        <constraint firstItem="LRo-6N-cJe" firstAttribute="width" secondItem="oes-bP-bNb" secondAttribute="width" id="ew2-Gc-cmo"/>
                                                         <constraint firstItem="73Y-yW-msc" firstAttribute="leading" secondItem="sgL-rj-cYe" secondAttribute="trailing" constant="8" id="eza-oY-Q55"/>
                                                         <constraint firstItem="hME-67-gJ3" firstAttribute="centerY" secondItem="ScO-JL-cDx" secondAttribute="centerY" id="ffU-tk-8qL"/>
                                                         <constraint firstItem="gil-F6-JRq" firstAttribute="height" secondItem="y1N-0A-RUn" secondAttribute="height" multiplier="0.7" id="ghU-2t-4pp"/>
@@ -348,14 +289,10 @@
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" red="0.25098039220000001" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="0.25098039220000001" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="LRo-6N-cJe" secondAttribute="bottom" id="x4Q-LA-xSv"/>
-                                                </constraints>
                                                 <connections>
                                                     <outlet property="avatarImageView" destination="sgL-rj-cYe" id="ueK-ww-E1e"/>
                                                     <outlet property="followButton" destination="gil-F6-JRq" id="KxZ-Kf-fjR"/>
                                                     <outlet property="followButtonSpinner" destination="S5U-W7-hlM" id="0je-dq-hfs"/>
-                                                    <outlet property="likedCountButton" destination="OzL-TT-rvW" id="QYu-e4-2eu"/>
                                                     <outlet property="likedImage" destination="g5l-cX-hau" id="fhy-gh-Qdz"/>
                                                     <outlet property="petBreedLabel" destination="73Y-yW-msc" id="yuJ-dH-4PO"/>
                                                     <outlet property="petLocationLabel" destination="Xwh-cA-G6f" id="kbH-Ak-w7E"/>
@@ -363,22 +300,6 @@
                                                     <outlet property="postImageView" destination="ggU-2X-Xxp" id="aJs-Ek-jM9"/>
                                                     <outlet property="postMessageLabel" destination="NO2-br-qRs" id="tCZ-bo-VbA"/>
                                                     <outlet property="postTimeLabel" destination="mFu-rC-1yS" id="PB8-ey-7jJ"/>
-                                                    <outletCollection property="likedUserImageViews" destination="Cac-hw-cmD" collectionClass="NSMutableArray" id="BfC-OQ-piW"/>
-                                                    <outletCollection property="likedUserImageViews" destination="NZP-m2-EqT" collectionClass="NSMutableArray" id="xBn-VB-jra"/>
-                                                    <outletCollection property="likedUserImageViews" destination="xKQ-h1-a32" collectionClass="NSMutableArray" id="wCo-fQ-mI8"/>
-                                                    <outletCollection property="likedUserImageViews" destination="Cp9-GE-ZJj" collectionClass="NSMutableArray" id="jwu-tp-15G"/>
-                                                    <outletCollection property="likedUserImageViews" destination="oWl-k5-SoO" collectionClass="NSMutableArray" id="Ov8-zG-Hth"/>
-                                                    <outletCollection property="likedUserImageViews" destination="4ij-BD-BcQ" collectionClass="NSMutableArray" id="czF-JQ-wQ3"/>
-                                                    <outletCollection property="likedUserImageViews" destination="ha7-CA-jQe" collectionClass="NSMutableArray" id="VNM-KQ-521"/>
-                                                    <outletCollection property="likedUserImageViews" destination="7bX-sc-OMx" collectionClass="NSMutableArray" id="rXl-rV-73x"/>
-                                                    <outletCollection property="likedUserImageViews" destination="Cac-hw-cmD" collectionClass="NSMutableArray" id="LPP-NA-SrO"/>
-                                                    <outletCollection property="likedUserImageViews" destination="NZP-m2-EqT" collectionClass="NSMutableArray" id="vur-YI-Cj1"/>
-                                                    <outletCollection property="likedUserImageViews" destination="xKQ-h1-a32" collectionClass="NSMutableArray" id="xXS-iQ-L8A"/>
-                                                    <outletCollection property="likedUserImageViews" destination="Cp9-GE-ZJj" collectionClass="NSMutableArray" id="gqV-Rb-8R9"/>
-                                                    <outletCollection property="likedUserImageViews" destination="oWl-k5-SoO" collectionClass="NSMutableArray" id="6fm-t7-1PQ"/>
-                                                    <outletCollection property="likedUserImageViews" destination="4ij-BD-BcQ" collectionClass="NSMutableArray" id="vzV-VB-oJc"/>
-                                                    <outletCollection property="likedUserImageViews" destination="ha7-CA-jQe" collectionClass="NSMutableArray" id="5Ah-qH-teF"/>
-                                                    <outletCollection property="likedUserImageViews" destination="7bX-sc-OMx" collectionClass="NSMutableArray" id="hGi-eK-mG7"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
