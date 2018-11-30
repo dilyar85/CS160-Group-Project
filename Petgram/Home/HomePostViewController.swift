@@ -114,6 +114,8 @@ class HomePostTableViewCell: UITableViewCell {
             return
         }
         let vc = mainStoryboard.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
+        
+        //FIXME: cannot set with shard user? is confusing with current and other user
         vc.user = PetDateController.shared.user
         vc.profileType = ProfileVCType.otherUser(homePost.userInfo)
         navController.pushViewController(vc, animated: true)

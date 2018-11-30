@@ -60,10 +60,12 @@ class ProfileViewController: UIViewController, UserNeeded {
             self.follwingCountLabel.text = "\(followees.count)"
         }
     }
+    
+    
     @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var imageView: CircleImageView!
+    @IBOutlet weak var avatarImageView: CircleImageView!
     
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var statsView: UIView!
@@ -103,21 +105,23 @@ class ProfileViewController: UIViewController, UserNeeded {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.view.backgroundColor = .petBackground
+        //        self.view.backgroundColor = .petBackground
         self.setStatusBar(color: .petBackground)
         
         self.setupViewsWithType()
         
         self.updateStatsCountView()
         
+        self.setupAvatarView()
+        
         
         self.fetchPosts()
         
-//        NotificationCenter.default.addObserver(
-//            self,
-//            selector: #selector(setUpPetInfoLabels),
-//            name: .userInfoDidUpdated,
-//            object: nil)
+        //        NotificationCenter.default.addObserver(
+        //            self,
+        //            selector: #selector(setUpPetInfoLabels),
+        //            name: .userInfoDidUpdated,
+        //            object: nil)
         
     }
     
@@ -130,6 +134,7 @@ class ProfileViewController: UIViewController, UserNeeded {
         //We updatePetInfoLables() here
         self.setUpPetInfoLabels()
     }
+    
     
     func setupViewsWithType() {
         guard let type = self.profileType else {
@@ -155,70 +160,70 @@ class ProfileViewController: UIViewController, UserNeeded {
             
             self.view.addSubview(settingButton)
             self.view.addSubview(settingImaggView)
-
             
             
-//            let width = NSLayoutConstraint (
-//                item: settingButton,
-//                attribute: .width,
-//                relatedBy: .equal,
-//                toItem: nil,
-//                attribute: .notAnAttribute,
-//                multiplier: 1.0,
-//                constant: 50
-//            )
-//            
-//            let height = NSLayoutConstraint(
-//                item: settingButton,
-//                attribute: .height,
-//                relatedBy: .equal,
-//                toItem: nil,
-//                attribute: .notAnAttribute,
-//                multiplier: 1.0,
-//                constant: 50
-//            )
-//            
-//            let trailing = NSLayoutConstraint(
-//                item: settingButton,
-//                attribute: .trailing,
-//                relatedBy: .equal,
-//                toItem: self.view,
-//                attribute: .trailing,
-//                multiplier: 1.0,
-//                constant: 0.0
-//            )
-//            
-//            let top = NSLayoutConstraint(
-//                item: settingButton,
-//                attribute: .top,
-//                relatedBy: .equal,
-//                toItem: self.view,
-//                attribute: .top,
-//                multiplier: 1.0,
-//                constant: 0.0
-//            )
-//            
-//            let centerX = NSLayoutConstraint(
-//                item: settingButton,
-//                attribute: .centerX,
-//                relatedBy: .equal,
-//                toItem: self.view,
-//                attribute: .centerX,
-//                multiplier: 1.0,
-//                constant: 0.0
-//            )
-//            
-//            let centerY = NSLayoutConstraint(
-//                item: settingButton,
-//                attribute: .centerY,
-//                relatedBy: .equal,
-//                toItem: self.view,
-//                attribute: .centerY,
-//                multiplier: 1.0,
-//                constant: 0.0
-//            )
-
-//            NSLayoutConstraint.activate([width, height, top, trailing])
+            
+            //            let width = NSLayoutConstraint (
+            //                item: settingButton,
+            //                attribute: .width,
+            //                relatedBy: .equal,
+            //                toItem: nil,
+            //                attribute: .notAnAttribute,
+            //                multiplier: 1.0,
+            //                constant: 50
+            //            )
+            //
+            //            let height = NSLayoutConstraint(
+            //                item: settingButton,
+            //                attribute: .height,
+            //                relatedBy: .equal,
+            //                toItem: nil,
+            //                attribute: .notAnAttribute,
+            //                multiplier: 1.0,
+            //                constant: 50
+            //            )
+            //
+            //            let trailing = NSLayoutConstraint(
+            //                item: settingButton,
+            //                attribute: .trailing,
+            //                relatedBy: .equal,
+            //                toItem: self.view,
+            //                attribute: .trailing,
+            //                multiplier: 1.0,
+            //                constant: 0.0
+            //            )
+            //
+            //            let top = NSLayoutConstraint(
+            //                item: settingButton,
+            //                attribute: .top,
+            //                relatedBy: .equal,
+            //                toItem: self.view,
+            //                attribute: .top,
+            //                multiplier: 1.0,
+            //                constant: 0.0
+            //            )
+            //
+            //            let centerX = NSLayoutConstraint(
+            //                item: settingButton,
+            //                attribute: .centerX,
+            //                relatedBy: .equal,
+            //                toItem: self.view,
+            //                attribute: .centerX,
+            //                multiplier: 1.0,
+            //                constant: 0.0
+            //            )
+            //
+            //            let centerY = NSLayoutConstraint(
+            //                item: settingButton,
+            //                attribute: .centerY,
+            //                relatedBy: .equal,
+            //                toItem: self.view,
+            //                attribute: .centerY,
+            //                multiplier: 1.0,
+            //                constant: 0.0
+            //            )
+            
+            //            NSLayoutConstraint.activate([width, height, top, trailing])
             
             
             
@@ -305,20 +310,20 @@ class ProfileViewController: UIViewController, UserNeeded {
         }
     }
     
-//    @objc private func followButtonTapped() {
-//        guard let type = self.profileType else {
-//            Logger.log("Trying to call settingButtonTapped() with nil profileType", logType: .error)
-//            return
-//        }
-//        switch type {
-//        case .selfUser:
-//            let vc = mainStoryboard.instantiateViewController(withIdentifier: "SettingsViewController") as! SettingsViewController
-//            self.navigationController?.pushViewController(vc, animated: true)
-//        default:
-//            Logger.log("Trying to call settingButtonTapped() with other type: \(type)", logType: .error)
-//        }
-//
-//    }
+    //    @objc private func followButtonTapped() {
+    //        guard let type = self.profileType else {
+    //            Logger.log("Trying to call settingButtonTapped() with nil profileType", logType: .error)
+    //            return
+    //        }
+    //        switch type {
+    //        case .selfUser:
+    //            let vc = mainStoryboard.instantiateViewController(withIdentifier: "SettingsViewController") as! SettingsViewController
+    //            self.navigationController?.pushViewController(vc, animated: true)
+    //        default:
+    //            Logger.log("Trying to call settingButtonTapped() with other type: \(type)", logType: .error)
+    //        }
+    //
+    //    }
     
     private func updateStatsCountView() {
         guard let user = self.user, let type = self.profileType else {
@@ -344,6 +349,40 @@ class ProfileViewController: UIViewController, UserNeeded {
         }
         
     }
+    
+    func setupAvatarView() {
+        
+        guard let user = self.user, let type = self.profileType else {
+            return
+        }
+        
+        
+        
+        switch type {
+        case .selfUser:
+            user.getUserInfo(withId: user.id) { (userInfo) in
+                guard let userInfo = userInfo else {
+                    return
+                }
+                if let avatarUrl = userInfo.avatarUrl {
+                    self.avatarImageView.kf.indicatorType = .activity
+                    self.avatarImageView.kf.setImage(with: URL(string: avatarUrl))
+                }
+            }
+            
+        case .otherUser(let userInfo):
+            
+            if let avatarUrl = userInfo.avatarUrl {
+                self.avatarImageView.kf.indicatorType = .activity
+                self.avatarImageView.kf.setImage(with: URL(string: avatarUrl))
+            }
+            
+        }
+        
+        
+    }
+    
+    
     
     
     func setUpPetInfoLabels() {
@@ -396,9 +435,9 @@ class ProfileViewController: UIViewController, UserNeeded {
         }
     }
     
-//    deinit {
-//        NotificationCenter.default.removeObserver(self)
-//    }
+    //    deinit {
+    //        NotificationCenter.default.removeObserver(self)
+    //    }
     
 }
 
@@ -415,7 +454,7 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostTableViewCell", for: indexPath) as! PostTableViewCell
         
         cell.post = self.posts?[indexPath.row]
-
+        
         return cell
     }
     
@@ -424,7 +463,7 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
     // MARK: Table View Delegate
     
     
-
+    
 }
 
 class PostTableViewCell: UITableViewCell {
