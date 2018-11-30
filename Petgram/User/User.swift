@@ -913,7 +913,8 @@ class User: NSObject, NSCoding {
             let url = LeanCloudApiInfo.apiBaseUrl.rawValue + "/classes/_status"
             
             let params: Parameters = [
-                "include": "owner" //to get the data from pointer "owner" in returned json
+                "include": "owner", //to get the data from pointer "owner" in returned json
+                "order": "-createdAt"
             ]
             
             
