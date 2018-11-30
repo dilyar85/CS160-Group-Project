@@ -169,130 +169,89 @@
                                                                 <action selector="avatarButtonTapped" destination="8xs-6f-EZA" eventType="touchUpInside" id="7wd-uA-Gox"/>
                                                             </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="卡卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1N-0A-RUn" userLabel="Pet Name Label">
-                                                            <rect key="frame" x="98" y="10" width="158" height="45"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="卡卡" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1N-0A-RUn" userLabel="Pet Name Label">
+                                                            <rect key="frame" x="98" y="10" width="128" height="75"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="128" id="MG8-hr-jqO"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="泰迪犬" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73Y-yW-msc" userLabel="Pet Breed Label">
-                                                            <rect key="frame" x="98" y="55" width="158" height="30"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gil-F6-JRq" userLabel="Follow Button">
-                                                            <rect key="frame" x="264" y="16" width="100" height="31.666666666666671"/>
-                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="100" id="fqg-Y9-zcB"/>
-                                                            </constraints>
-                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <state key="normal" title="Button">
-                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            </state>
-                                                            <connections>
-                                                                <action selector="followButtonTapped:" destination="8xs-6f-EZA" eventType="touchUpInside" id="krA-zR-ddw"/>
-                                                            </connections>
-                                                        </button>
-                                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="S5U-W7-hlM">
-                                                            <rect key="frame" x="304" y="22.666666666666671" width="20" height="20"/>
-                                                        </activityIndicatorView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NO2-br-qRs" userLabel="Post Message Label">
-                                                            <rect key="frame" x="15" y="94.666666666666671" width="349" height="21"/>
+                                                            <rect key="frame" x="15" y="97" width="349" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ggU-2X-Xxp" userLabel="Post Image View">
-                                                            <rect key="frame" x="4" y="123.66666666666669" width="379" height="350"/>
+                                                            <rect key="frame" x="4" y="126" width="379" height="350"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="350" id="MuC-Pl-VPU"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFu-rC-1yS" userLabel="Post Time Label">
-                                                            <rect key="frame" x="15" y="481" width="75" height="20"/>
+                                                            <rect key="frame" x="15" y="483.33333333333331" width="75" height="20"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="overflow_heart" translatesAutoresizingMaskIntoConstraints="NO" id="g5l-cX-hau" userLabel="Like Image">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="overflow_heart" translatesAutoresizingMaskIntoConstraints="NO" id="g5l-cX-hau" userLabel="Like Image">
                                                             <rect key="frame" x="301.66666666666669" y="479.66666666666669" width="25" height="25"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="25" id="myY-8Z-Jjx"/>
-                                                                <constraint firstAttribute="height" constant="25" id="pHO-VR-Tdo"/>
-                                                            </constraints>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScO-JL-cDx" userLabel="Like Button">
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScO-JL-cDx" userLabel="Like Button">
                                                             <rect key="frame" x="284" y="471" width="60" height="40"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="40" id="6Wo-UX-dcr"/>
-                                                                <constraint firstAttribute="width" constant="60" id="pOr-sy-f23"/>
-                                                            </constraints>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <connections>
                                                                 <action selector="likeButtonTapped:" destination="8xs-6f-EZA" eventType="touchUpInside" id="v66-HW-JxB"/>
                                                             </connections>
                                                         </button>
-                                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button_more_white" translatesAutoresizingMaskIntoConstraints="NO" id="hME-67-gJ3">
+                                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="button_more_white" translatesAutoresizingMaskIntoConstraints="NO" id="hME-67-gJ3">
                                                             <rect key="frame" x="347" y="471" width="16" height="40"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xwh-cA-G6f" userLabel="Pet Location Label">
-                                                            <rect key="frame" x="264" y="60" width="100" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xwh-cA-G6f" userLabel="Pet Location Label">
+                                                            <rect key="frame" x="234" y="60" width="130" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="泰迪犬" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73Y-yW-msc" userLabel="Pet Breed Label">
+                                                            <rect key="frame" x="234" y="14" width="130" height="30"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.25098039220000001" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="trailingMargin" secondItem="gil-F6-JRq" secondAttribute="trailing" id="0FY-RU-kOx"/>
                                                         <constraint firstItem="y1N-0A-RUn" firstAttribute="leading" secondItem="sgL-rj-cYe" secondAttribute="trailing" constant="8" id="24U-bG-blf"/>
-                                                        <constraint firstItem="73Y-yW-msc" firstAttribute="top" secondItem="y1N-0A-RUn" secondAttribute="bottom" id="2jb-Rf-g9s"/>
-                                                        <constraint firstItem="g5l-cX-hau" firstAttribute="centerY" secondItem="mFu-rC-1yS" secondAttribute="centerY" constant="1.1666666666667425" id="5JM-Jb-so9"/>
                                                         <constraint firstItem="mFu-rC-1yS" firstAttribute="centerX" secondItem="DrB-Kt-ZFW" secondAttribute="centerX" id="74H-K3-DGy"/>
                                                         <constraint firstItem="ggU-2X-Xxp" firstAttribute="top" secondItem="NO2-br-qRs" secondAttribute="bottom" constant="8" id="7FR-P0-FXR"/>
                                                         <constraint firstAttribute="leadingMargin" secondItem="NO2-br-qRs" secondAttribute="leading" id="7FV-Wj-EQM"/>
-                                                        <constraint firstItem="S5U-W7-hlM" firstAttribute="centerY" secondItem="gil-F6-JRq" secondAttribute="centerY" constant="0.83333333333317938" id="9ij-pZ-Mdc"/>
-                                                        <constraint firstItem="NO2-br-qRs" firstAttribute="top" secondItem="sgL-rj-cYe" secondAttribute="bottom" constant="9.6666666666666572" id="ARk-7Q-4Qx"/>
-                                                        <constraint firstItem="hME-67-gJ3" firstAttribute="leading" secondItem="ScO-JL-cDx" secondAttribute="trailing" constant="3" id="DX0-GS-5KA"/>
+                                                        <constraint firstItem="NO2-br-qRs" firstAttribute="top" secondItem="sgL-rj-cYe" secondAttribute="bottom" constant="12" id="ARk-7Q-4Qx"/>
                                                         <constraint firstAttribute="leadingMargin" secondItem="sgL-rj-cYe" secondAttribute="leading" id="EvR-pg-88f"/>
-                                                        <constraint firstItem="73Y-yW-msc" firstAttribute="height" secondItem="sgL-rj-cYe" secondAttribute="height" multiplier="0.4" id="HmS-qv-Rta"/>
-                                                        <constraint firstItem="gil-F6-JRq" firstAttribute="top" secondItem="sgL-rj-cYe" secondAttribute="top" constant="6.0000000000001137" id="I5q-nV-BeK"/>
-                                                        <constraint firstItem="ScO-JL-cDx" firstAttribute="centerX" secondItem="g5l-cX-hau" secondAttribute="centerX" id="JtJ-Ce-Qou"/>
                                                         <constraint firstItem="DrB-Kt-ZFW" firstAttribute="trailing" secondItem="sgL-rj-cYe" secondAttribute="trailing" id="OKR-nK-U0W"/>
                                                         <constraint firstItem="ggU-2X-Xxp" firstAttribute="width" secondItem="oes-bP-bNb" secondAttribute="width" id="PDK-wb-vB7"/>
                                                         <constraint firstAttribute="trailingMargin" secondItem="NO2-br-qRs" secondAttribute="trailing" id="QVp-iW-d8B"/>
                                                         <constraint firstItem="ggU-2X-Xxp" firstAttribute="leading" secondItem="oes-bP-bNb" secondAttribute="leadingMargin" constant="-11" id="TAz-UH-KmQ"/>
-                                                        <constraint firstItem="hME-67-gJ3" firstAttribute="top" secondItem="ScO-JL-cDx" secondAttribute="top" id="XpR-ev-ht0"/>
-                                                        <constraint firstItem="Xwh-cA-G6f" firstAttribute="leading" secondItem="gil-F6-JRq" secondAttribute="leading" id="YVH-Ai-Nsg"/>
-                                                        <constraint firstItem="S5U-W7-hlM" firstAttribute="centerX" secondItem="gil-F6-JRq" secondAttribute="centerX" id="YcV-Ym-kvO"/>
                                                         <constraint firstItem="mFu-rC-1yS" firstAttribute="top" secondItem="ggU-2X-Xxp" secondAttribute="bottom" constant="7.3333333333333144" id="a4t-lK-TYP"/>
-                                                        <constraint firstItem="gil-F6-JRq" firstAttribute="leading" secondItem="y1N-0A-RUn" secondAttribute="trailing" constant="8" id="dey-eA-wrC"/>
+                                                        <constraint firstItem="y1N-0A-RUn" firstAttribute="height" secondItem="DrB-Kt-ZFW" secondAttribute="height" id="dV6-qY-9UP"/>
                                                         <constraint firstItem="y1N-0A-RUn" firstAttribute="top" secondItem="sgL-rj-cYe" secondAttribute="top" id="dre-0r-h4B"/>
-                                                        <constraint firstItem="73Y-yW-msc" firstAttribute="leading" secondItem="sgL-rj-cYe" secondAttribute="trailing" constant="8" id="eza-oY-Q55"/>
-                                                        <constraint firstItem="hME-67-gJ3" firstAttribute="centerY" secondItem="ScO-JL-cDx" secondAttribute="centerY" id="ffU-tk-8qL"/>
-                                                        <constraint firstItem="gil-F6-JRq" firstAttribute="height" secondItem="y1N-0A-RUn" secondAttribute="height" multiplier="0.7" id="ghU-2t-4pp"/>
                                                         <constraint firstItem="DrB-Kt-ZFW" firstAttribute="leading" secondItem="sgL-rj-cYe" secondAttribute="leading" id="i2D-cH-oYM"/>
                                                         <constraint firstItem="DrB-Kt-ZFW" firstAttribute="top" secondItem="sgL-rj-cYe" secondAttribute="top" id="kj1-sf-MEx"/>
                                                         <constraint firstItem="mFu-rC-1yS" firstAttribute="width" secondItem="DrB-Kt-ZFW" secondAttribute="width" id="lqJ-uy-ZeU"/>
-                                                        <constraint firstItem="ScO-JL-cDx" firstAttribute="centerY" secondItem="g5l-cX-hau" secondAttribute="centerY" constant="-1.1666666666667425" id="mbC-sD-Tw6"/>
-                                                        <constraint firstItem="y1N-0A-RUn" firstAttribute="height" secondItem="sgL-rj-cYe" secondAttribute="height" multiplier="0.6" id="nwe-lU-7um"/>
                                                         <constraint firstItem="DrB-Kt-ZFW" firstAttribute="bottom" secondItem="sgL-rj-cYe" secondAttribute="bottom" id="o39-ZN-DsW"/>
-                                                        <constraint firstItem="Xwh-cA-G6f" firstAttribute="width" secondItem="gil-F6-JRq" secondAttribute="width" id="psB-Qn-wUn"/>
-                                                        <constraint firstItem="73Y-yW-msc" firstAttribute="width" secondItem="y1N-0A-RUn" secondAttribute="width" id="pv2-UX-FnV"/>
-                                                        <constraint firstItem="g5l-cX-hau" firstAttribute="centerX" secondItem="gil-F6-JRq" secondAttribute="centerX" id="q0w-TB-ooC"/>
-                                                        <constraint firstItem="Xwh-cA-G6f" firstAttribute="top" secondItem="gil-F6-JRq" secondAttribute="bottom" constant="12.333333333333215" id="vhi-GS-VMv"/>
                                                         <constraint firstItem="sgL-rj-cYe" firstAttribute="top" secondItem="oes-bP-bNb" secondAttribute="topMargin" constant="-1" id="y4q-C7-1tB"/>
-                                                        <constraint firstItem="hME-67-gJ3" firstAttribute="bottom" secondItem="ScO-JL-cDx" secondAttribute="bottom" id="zBb-EB-HIm"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" red="0.25098039220000001" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="0.25098039220000001" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <outlet property="avatarImageView" destination="sgL-rj-cYe" id="ueK-ww-E1e"/>
-                                                    <outlet property="followButton" destination="gil-F6-JRq" id="KxZ-Kf-fjR"/>
-                                                    <outlet property="followButtonSpinner" destination="S5U-W7-hlM" id="0je-dq-hfs"/>
                                                     <outlet property="likedImage" destination="g5l-cX-hau" id="fhy-gh-Qdz"/>
                                                     <outlet property="petBreedLabel" destination="73Y-yW-msc" id="yuJ-dH-4PO"/>
                                                     <outlet property="petLocationLabel" destination="Xwh-cA-G6f" id="kbH-Ak-w7E"/>

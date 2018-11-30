@@ -231,7 +231,7 @@ class HomePostTableViewCell: UITableViewCell {
         let post = homePost.post
         
         //Set follow button
-        self.setupFollowButton(with: userInfo)
+//        self.setupFollowButton(with: userInfo)
         
         //Set Pet Location Label
         self.setupPetLocation(with: userInfo)
@@ -271,35 +271,35 @@ class HomePostTableViewCell: UITableViewCell {
         self.petLocationLabel.text = userInfo.petLocation
     }
     
-    private func setupFollowButton(with userInfo: UserInfo) {
-        
-        self.followButton.isUserInteractionEnabled = false
-        self.followButton.isHidden = true
-        self.followButton.tag = 0
-        
-        
-        self.followButtonSpinner.startAnimating()
-        self.followButtonSpinner.isHidden = false
-        
-        guard let user = PetDateController.shared.user else {
-            return
-        }
-        
-        user.isFollowing(otherUserId: userInfo.id) { (followed) in
-            guard let followed = followed else {
-                return
-            }
-            self.followButton.setFollowState(followed)
-            self.followButton.tag = followed ? 1 : 0
-            
-            self.followButtonSpinner.isHidden = true
-            self.followButtonSpinner.stopAnimating()
-            
-            self.followButton.isEnabled = true
-            self.followButton.isHidden = false
-        }
-        
-    }
+//    private func setupFollowButton(with userInfo: UserInfo) {
+//
+//        self.followButton.isUserInteractionEnabled = false
+//        self.followButton.isHidden = true
+//        self.followButton.tag = 0
+//
+//
+//        self.followButtonSpinner.startAnimating()
+//        self.followButtonSpinner.isHidden = false
+//
+//        guard let user = PetDateController.shared.user else {
+//            return
+//        }
+//
+//        user.isFollowing(otherUserId: userInfo.id) { (followed) in
+//            guard let followed = followed else {
+//                return
+//            }
+//            self.followButton.setFollowState(followed)
+//            self.followButton.tag = followed ? 1 : 0
+//
+//            self.followButtonSpinner.isHidden = true
+//            self.followButtonSpinner.stopAnimating()
+//
+//            self.followButton.isEnabled = true
+//            self.followButton.isHidden = false
+//        }
+//
+//    }
     
     var likedStatus: Bool? {
         
