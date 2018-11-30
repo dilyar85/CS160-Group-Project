@@ -14,6 +14,17 @@ import SwiftyJSON
 import FBSDKLoginKit
 import FBSDKCoreKit
 
+public struct MyError: Error {
+    let msg: String
+    
+}
+
+extension MyError: LocalizedError {
+    public var errorDescription: String? {
+        return NSLocalizedString(msg, comment: "")
+    }
+}
+
 enum LeanCloudApiInfo: String {
     case appId = "PCxTurFECyz1zAW9Wg1jcgtC-MdYXbMMI"
     case appKey = "SyD1iI6XVuqouStLQ9uxgkDj"
@@ -884,6 +895,70 @@ class User: NSObject, NSCoding {
     
     
     // MARK: Fetch Posts
+    
+    func fetchFollowingsHomePosts(callback: @escaping(Error?, [HomePost]?) -> ()) {
+        self.getFollowersAndFollowees(of: self.id) { (followersInfo, followeesInfo) in
+            guard let followingsInfo = followeesInfo else {
+                callback(MyError(msg: "Cannot fetch current user's timeline"), nil)
+                return
+            }
+            
+            var ids : [String] = []
+            for folloingInfo in followingsInfo {
+                ids.append(folloingInfo.id)
+            }
+            
+            let url = LeanCloudApiInfo.apiBaseUrl.rawValue + "/classes/_status"
+        
+            self.authenticatedAFManager.request(
+                url,
+                method: .get
+                ).responseJSON { (response) in
+                    switch response.result {
+                    case .failure(let error):
+                        Logger.log("Failed to fetch user timeline. Error Detail:\n\(error)", logType: .error)
+                        
+                        callback(error, nil)
+                        
+                    case .success(let data):
+                        guard let resultArrayJson = JSON(data)["results"].array, resultArrayJson.count > 0 else {
+                            Logger.log("Timnline (for user id: \(self.id) ) is empty. Returned Json:\n\(JSON(data))", logType: .error)
+                            
+                            callback(nil, nil)
+                            return
+                        }
+                        
+                        Logger.log("fetchTimeLine() Result json: \n\(JSON(data))", logType: .actionLog)
+                        
+                        var homePosts: [HomePost] = []
+                        for postJson in resultArrayJson {
+                            guard
+                                let postId = postJson["objectId"].string,
+                                let userId = postJson["owner"]["objectId"].string else {
+                                    continue
+                            }
+                            
+                            //only getting following's posts
+                            if !ids.contains(userId) {
+                                continue
+                            }
+                            
+                            let post = Post(withId: postId, postJson: postJson)
+                            let userInfo = UserInfo(withId: userId, userJson: postJson["owner"])
+                            
+                            let homePost = HomePost(userInfo: userInfo, post: post)
+                            homePosts.append(homePost)
+                        }
+                        
+                        callback(nil, homePosts)
+                        
+                    }
+                    
+            }
+        }
+    }
+    
+   
     
     func fetchTimeLine(callback: @escaping(Error?, [HomePost]?) -> ()) {
         let url = LeanCloudApiInfo.apiBaseUrl.rawValue + "/subscribe/statuses"

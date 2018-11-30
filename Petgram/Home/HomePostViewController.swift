@@ -57,7 +57,9 @@ class HomePostViewController: UIViewController, UserNeeded {
         guard let user = self.user else {
             return
         }
-        user.fetchTimeLine { (error, homePosts) in
+        
+        
+        user.fetchFollowingsHomePosts { (error, homePosts) in
             guard error == nil else {
                 let overlay = WarningOverlayView(title: "Load posts failed :(", subtitle: "Please check your connection", topButtonTitle: "Try again", topButtonAction: { (overlay) in
                     overlay.animateOut()
