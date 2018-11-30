@@ -196,7 +196,7 @@ class SelectionViewController: UIViewController, UITabBarDelegate, UITableViewDa
     
     
     let genders: [String] = ["Boy", "Girl"]
-    let breeds: [String] = ["Affenpinscher", "Barbet", "Cairn Terrier", "Chihuahua", "Dachshund", "English Foxhound", "Fox Terrier", "Greyhound", "Havanese", "Kuvasz", "Labradoodle", "Yorkipoo", "Robert", "Ishan"]
+    let breeds: [String] = ["Affenpinscher", "Affenpoo", "Airedoodle", "Barbet", "Beabull", "Cairn Terrier", "Chihuahua", "Dachshund", "English Foxhound", "Fox Terrier", "Greyhound", "Havanese", "Irish Terrier", "Jack Russel Mix", "Kuvasz", "Labradoodle", "Maltipoo", "Newfoundland Mix","Pointer", "Scottish Terrier", "Teddy Bear", "Vizsla", "Weimaraner Mix", "Xoloitzcuintli", "Yorkipoo", "Yorktese"]
     
     // MARK: UITableViewDelegate and UITableViewDataSouce
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
