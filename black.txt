@@ -1,0 +1,71 @@
+Test Suite 'PetgramBlackBoxTests' started at 2018-12-02 17:34:54.143
+Test Case '-[PetgramTests.PetgramBlackBoxTests testChangePetAdoptionDate]' started.
+Start testing with LeanCloud server...
+testChangePetAdoptionDate() successfully
+Test Case '-[PetgramTests.PetgramBlackBoxTests testChangePetAdoptionDate]' passed (0.001 seconds).
+Test Case '-[PetgramTests.PetgramBlackBoxTests testChangePetBreed]' started.
+Start testing with LeanCloud server...
+testChangePetBreed() successfully
+Test Case '-[PetgramTests.PetgramBlackBoxTests testChangePetBreed]' passed (0.000 seconds).
+Test Case '-[PetgramTests.PetgramBlackBoxTests testChangePetLocation]' started.
+Start testing with LeanCloud server...
+testChangePetLocation() successfully
+Test Case '-[PetgramTests.PetgramBlackBoxTests testChangePetLocation]' passed (0.000 seconds).
+Test Case '-[PetgramTests.PetgramBlackBoxTests testChangePetName]' started.
+Start testing with LeanCloud server...
+testChangePetName() successfully
+Test Case '-[PetgramTests.PetgramBlackBoxTests testChangePetName]' passed (0.000 seconds).
+Test Case '-[PetgramTests.PetgramBlackBoxTests testFetchingPosts]' started.
+Start testing with LeanCloud server...
+testFetchingPosts() successfully
+Test Case '-[PetgramTests.PetgramBlackBoxTests testFetchingPosts]' passed (0.000 seconds).
+Test Case '-[PetgramTests.PetgramBlackBoxTests testFollowUsers]' started.
+Start testing with LeanCloud server...
+testFollowUsers() successfully
+Test Case '-[PetgramTests.PetgramBlackBoxTests testFollowUsers]' passed (0.000 seconds).
+Test Case '-[PetgramTests.PetgramBlackBoxTests testLikeUserPost]' started.
+Start testing with LeanCloud server...
+testLikeUserPost() successfully
+Test Case '-[PetgramTests.PetgramBlackBoxTests testLikeUserPost]' passed (0.000 seconds).
+Test Case '-[PetgramTests.PetgramBlackBoxTests testLogin]' started.
+Start testing with LeanCloud server...
+testLogin() successfully
+Test Case '-[PetgramTests.PetgramBlackBoxTests testLogin]' passed (0.000 seconds).
+Test Case '-[PetgramTests.PetgramBlackBoxTests testLogout]' started.
+Start testing with LeanCloud server...
+testLogout() successfully
+Test Case '-[PetgramTests.PetgramBlackBoxTests testLogout]' passed (0.001 seconds).
+Test Case '-[PetgramTests.PetgramBlackBoxTests testSendingPosts]' started.
+Start testing with LeanCloud server...
+testSendingPosts() successfully
+Test Case '-[PetgramTests.PetgramBlackBoxTests testSendingPosts]' passed (0.013 seconds).
+Test Case '-[PetgramTests.PetgramBlackBoxTests testSignup]' started.
+Start testing with LeanCloud server...
+testSignup() successfully
+Test Case '-[PetgramTests.PetgramBlackBoxTests testSignup]' passed (0.001 seconds).
+Test Case '-[PetgramTests.PetgramBlackBoxTests testUnfollowUsers]' started.
+Start testing with LeanCloud server...
+testUnfollowUsers() successfully
+Test Case '-[PetgramTests.PetgramBlackBoxTests testUnfollowUsers]' passed (0.000 seconds).
+Test Case '-[PetgramTests.PetgramBlackBoxTests testUnlikeUserPost]' started.
+Start testing with LeanCloud server...
+testUnlikeUserPost() successfully
+Test Case '-[PetgramTests.PetgramBlackBoxTests testUnlikeUserPost]' passed (0.001 seconds).
+Test Case '-[PetgramTests.PetgramBlackBoxTests testViewFollowersCount]' started.
+Start testing with LeanCloud server...
+testViewFollowersCount() successfully
+Test Case '-[PetgramTests.PetgramBlackBoxTests testViewFollowersCount]' passed (0.002 seconds).
+Test Case '-[PetgramTests.PetgramBlackBoxTests testViewFollowingsCount]' started.
+Start testing with LeanCloud server...
+testViewFollowingsCount() successfully
+Test Case '-[PetgramTests.PetgramBlackBoxTests testViewFollowingsCount]' passed (0.001 seconds).
+Test Case '-[PetgramTests.PetgramBlackBoxTests testViewUserProfile]' started.
+Start testing with LeanCloud server...
+testViewUserProfile() successfully
+Test Case '-[PetgramTests.PetgramBlackBoxTests testViewUserProfile]' passed (0.001 seconds).
+Test Suite 'PetgramBlackBoxTests' passed at 2018-12-02 17:34:54.175.
+     Executed 16 tests, with 0 failures (0 unexpected) in 0.023 (0.032) seconds
+Test Suite 'PetgramTests.xctest' passed at 2018-12-02 17:34:54.176.
+     Executed 16 tests, with 0 failures (0 unexpected) in 0.023 (0.033) seconds
+Test Suite 'Selected tests' passed at 2018-12-02 17:34:54.177.
+     Executed 16 tests, with 0 failures (0 unexpected) in 0.023 (0.035) seconds

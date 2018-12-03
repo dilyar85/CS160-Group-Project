@@ -240,13 +240,13 @@ class PetgramTests: XCTestCase {
     func testDateGetString() {
         let date = Date()
         var input = "YYYY-MM-dd"
-        var expected = "2018-11-28" //today's date
+        var expected = "2018-12-02" //today's date
         var result = date.getString(withFormat: input)
         XCTAssertEqual(expected, result)
         print("testDateGetString() is tested successfully. Expected: \(expected); Result: \(result)")
         
         input = "MM-dd-YYYY"
-        expected = "11-28-2018"
+        expected = "12-02-2018" //today's date
         result = date.getString(withFormat: input)
         XCTAssertEqual(expected, result)
         print("testDateGetString() is tested successfully. Expected: \(expected); Result: \(result)")
